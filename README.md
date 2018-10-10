@@ -1,3 +1,3 @@
-<p align="center"><img src ="/Title2.gif" /></p>
+<p align="center"><img src ="/Title.gif" /></p>
 
 # Contents
