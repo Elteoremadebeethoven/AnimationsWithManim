@@ -1,9 +1,9 @@
 from big_ol_pile_of_manim_imports import *
 
-class TextoWrite(Scene): 
+class WriteText(Scene): 
     def construct(self): 
-        texto = TextMobject("Esto es un texto normal")
-        self.play(Write(texto))
+        text = TextMobject("This is a normal text")
+        self.play(Write(text))
         self.wait(3)
 
 class TextoAdd(Scene): 
