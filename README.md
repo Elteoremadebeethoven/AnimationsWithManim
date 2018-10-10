@@ -6,5 +6,5 @@
 2. Text effects with arrays
 3. Text transformations
 4. Visual tools
-5. Introduction to Graphs
+5. Introduction to plots
 6. Texts like 2D arrays
