@@ -11,7 +11,7 @@
 
 Extras:
 * Formulas in TeX
-* How add new fonts and packages to LaTeX
+* How to add new fonts and packages to LaTeX
 * Customize colors (background, background stroke)
 
 # What is Manim?
