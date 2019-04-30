@@ -10,7 +10,7 @@
 6. [Introduction in 2D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6a_plots_2D/scenes.md)/YouTube
 7. [Introduction in 3D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6b_plots_3D/scenes.md)/YouTube
 8. Add audio/YouTube
-9. Ad svg images/YouTube
+9. Add svg images/YouTube
 10. First project/YouTube
 
 Extras:
