@@ -27,7 +27,7 @@ LaTeX is a processor of specialized texts in the scientific field, however, Mani
 \frac{d}{dx}f(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}.
 ```
 If I built this command TeX return:
-<p align="center"><img src ="/TeX.png" /></p>
+<p align="center"><img src ="https://raw.githubusercontent.com/Elteoremadebeethoven/AnimacionesConManim/master/TeX.png" /></p>
 
 ## Who is tutorials for?
 This course is mainly aimed at teachers who want to explain a didactic and graphic form a mathematical development or the resolution of especially complex problems. The course extends to anyone who wants to explain a scientific topic in a original way.
