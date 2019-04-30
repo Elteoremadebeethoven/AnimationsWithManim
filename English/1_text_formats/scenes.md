@@ -25,7 +25,7 @@ class WriteText(Scene):
         self.wait(3)
 ```
 
-<p align="center"><img src ="/gifs/WriteText.gif" /></p>
+<p align="center"><img src ="/English/1_text_formats/gifs/WriteText.gif" /></p>
 
 ```python3
 class AddText(Scene): 
@@ -35,7 +35,7 @@ class AddText(Scene):
         self.wait(3)
 ```
 
-<p align="center"><img src ="/gifs/AddText.gif" /></p>
+<p align="center"><img src ="/English/1_text_formats/gifs/AddText.gif" /></p>
 
 ```python3
 class Formula(Scene): 
@@ -45,7 +45,7 @@ class Formula(Scene):
         self.wait(3)
 ```
 
-<p align="center"><img src ="/gifs/Formula.gif" /></p>
+<p align="center"><img src ="/English/1_text_formats/gifs/Formula.gif" /></p>
 
 ```python3
 class TipesOfText(Scene): 
@@ -59,7 +59,7 @@ class TipesOfText(Scene):
         self.wait(3)
 ```
 
-<p align="center"><img src ="/gifs/TipesOfText.gif" /></p>
+<p align="center"><img src ="/English/1_text_formats/gifs/TipesOfText.gif" /></p>
 
 ```python3
 class TipesOfText2(Scene): 
