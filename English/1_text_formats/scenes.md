@@ -1,9 +1,9 @@
 # Text format
-Remember: You have to add this line first to include all packages of manim.
+Remember: You have to add this line to include all packages of manim.
 ```python3
 from big_ol_pile_of_manim_imports import *
 ```
-como primera linea.
+In the first line.
 
 ## Programs
 ```python3
