@@ -6,7 +6,7 @@ class WriteText(Scene):
         self.play(Write(text))
         self.wait(3)
 
-class TextoAdd(Scene): 
+class AddText(Scene): 
     def construct(self): 
         text = TextMobject("This is a regular text")
         self.add(text)
