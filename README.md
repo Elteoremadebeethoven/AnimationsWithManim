@@ -2,7 +2,7 @@
 
 ## Contents (updating)
 0. Installation on [Windows](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/0_instalacion/windows/INSTRUCCIONES.md), [GNU/Linux](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/0_instalacion/gnuLinux/INSTRUCCIONES.md) and [Mac](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/0_instalacion/macOS/INSTRUCCIONES.md).
-1. [Text format](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/1_text_formats/scenes.md)/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/1_formato_textos/ESCENAS.md)
+1. [Text format](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/1_text_formats/scenes.md)/YouTube
 2. Tex formulas/YouTube
 3. [Text like arrays and basic animations](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/3_text_like_arrays/scenes.md)/YouTube
 4. [Transformations](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/4_transform/scenes.md)/YouTube
@@ -10,7 +10,7 @@
 6. [Introduction in 2D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6a_plots_2D/scenes.md)/YouTube
 7. [Introduction in 3D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6b_plots_3D/scenes.md)/YouTube
 8. Add audio/YouTube
-9. Ad svg images/YouTube/Scenes
+9. Ad svg images/YouTube
 10. First project/YouTube
 
 Extras:
