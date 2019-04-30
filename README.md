@@ -1,6 +1,8 @@
 <p align="center"><img src ="/_title.gif" /></p>
 
 ## Contents (updating)
+### This tutorial is based on the manim version of [3 february of 2019](https://github.com/3b1b/manim/tree/3b088b12843b7a4459fe71eba96b70edafb7aa78) 
+
 0. Installation on [Windows](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/0_instalacion/windows/INSTRUCCIONES.md), [GNU/Linux](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/0_instalacion/gnuLinux/INSTRUCCIONES.md) and [Mac](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/0_instalacion/macOS/INSTRUCCIONES.md).
 1. [Text format](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/1_text_formats/scenes.md)/YouTube
 2. Tex formulas/YouTube
