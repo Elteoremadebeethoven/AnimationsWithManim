@@ -2,13 +2,13 @@
 
 ## Contents (updating)
 0. Installation on [Windows](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/0_instalacion/windows/INSTRUCCIONES.md), [GNU/Linux](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/0_instalacion/gnuLinux/INSTRUCCIONES.md) and [Mac](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/0_instalacion/macOS/INSTRUCCIONES.md).
-1. Text format/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/1_formato_textos/ESCENAS.md)
+1. [Text format](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/1_text_formats/scenes.md)/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/1_formato_textos/ESCENAS.md)
 2. Tex formulas/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/extras/formulas_tex/ESCENA.md)
-3. Text like arrays and basic animations/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/2_efectos_arreglos_texto/ESCENAS.md)
-4. Transformations/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/3_transformaciones_texto/ESCENAS.md)
-5. Visual tools/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/4_herramientas_visuales/ESCENAS.md)
-6. Introduction in 2D plot/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/5_introducci%C3%B3n_gr%C3%A1ficas/ESCENAS.md)
-7. Introduction in 3D plot/YouTube/Scenes
+3. [Text like arrays and basic animations](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/3_text_like_arrays/scenes.md)/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/2_efectos_arreglos_texto/ESCENAS.md)
+4. [Transformations](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/4_transform/scenes.md)/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/3_transformaciones_texto/ESCENAS.md)
+5. [Visual tools](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/5_visual_tools/scenes.md)/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/4_herramientas_visuales/ESCENAS.md)
+6. [Introduction in 2D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6a_plots_2D/scenes.md)/YouTube/[Scenes](https://github.com/Elteoremadebeethoven/AnimacionesConManim/blob/master/Espa%C3%B1ol/5_introducci%C3%B3n_gr%C3%A1ficas/ESCENAS.md)
+7. [Introduction in 3D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6b_plots_3D/scenes.md)/YouTube/Scenes
 8. Add audio/YouTube
 9. Ad svg images/YouTube/Scenes
 10. First project/YouTube
