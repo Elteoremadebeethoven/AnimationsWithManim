@@ -59,7 +59,7 @@ class HelloWorld(Scene):
         self.play(Write(helloWorld))
         self.wait()
 ```
-<p align="center"><img src ="/HelloWorld.gif" /></p>
+<p align="center"><img src ="https://raw.githubusercontent.com/Elteoremadebeethoven/AnimacionesConManim/master/HelloWorld.gif" /></p>
 
 ## Requirements
 * Python 3.7
