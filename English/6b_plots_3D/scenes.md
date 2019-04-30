@@ -321,7 +321,7 @@ class Text3D1(ThreeDScene):
         self.add(axes,text3d)
 ```
 
-<p align="center"><img src ="/English/6b_plots_3D/gifs/Text3D1.gif" /></p>
+<p align="center"><img src ="/English/6b_plots_3D/gifs/Text3D1.png" /></p>
 
 ```python3
 # This text appears in XY plane, to rotate:
@@ -335,7 +335,7 @@ class Text3D2(ThreeDScene):
         self.add(axes,text3d)
 ```
 
-<p align="center"><img src ="/English/6b_plots_3D/gifs/Text3D2.gif" /></p>
+<p align="center"><img src ="/English/6b_plots_3D/gifs/Text3D2.png" /></p>
 
 ```python3
 # To see the text in the traditional form:
