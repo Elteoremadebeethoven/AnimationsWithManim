@@ -1,22 +1,11 @@
-# 
-## Programas
-
-### 
+# Text format
+Remember: You have to add this line first to include all packages of manim.
 ```python3
-
-
-````
-<p align="center"><img src ="/.gif" /></p>
-
-
-###
-```python3
-
-
+from big_ol_pile_of_manim_imports import *
 ```
+como primera linea.
 
-<p align="center"><img src ="gifs/.gif" /></p>
-
+## Programs
 ```python3
 class WriteText(Scene): 
     def construct(self): 
