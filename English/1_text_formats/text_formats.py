@@ -2,171 +2,197 @@ from big_ol_pile_of_manim_imports import *
 
 class WriteText(Scene): 
     def construct(self): 
-        text = TextMobject("This is a normal text")
+        text = TextMobject("This is a regular text")
         self.play(Write(text))
         self.wait(3)
 
 class TextoAdd(Scene): 
     def construct(self): 
-        texto = TextMobject("Esto es un texto normal")
-        self.add(texto)
+        text = TextMobject("This is a regular text")
+        self.add(text)
         self.wait(3)
 
 class Formula(Scene): 
     def construct(self): 
-        formula = TexMobject("Esto es una formula")
+        formula = TexMobject("This is a formula")
         self.play(Write(formula))
         self.wait(3)
 
-class TextoMixto(Scene): 
+class TipesOfText(Scene): 
     def construct(self): 
-        textoMixto = TextMobject("""
-        	Esto es un texto normal,
-        	$esto es una formula$,
-        	$$esto es una formula$$
+        tipesOfText = TextMobject("""
+        	This is a regular text,
+        	$this is a formula$,
+        	$$this is a formula$$
         	""")
-        self.play(Write(textoMixto))
+        self.play(Write(tipesOfText))
         self.wait(3)
 
-class TextoMixto2(Scene): 
+class TipesOfText2(Scene): 
     def construct(self): 
-        textoMixto = TextMobject("""
-        	Esto es un texto normal,
+        tipesOfText = TextMobject("""
+        	This is a regular text,
         	$\\frac{x}{y}$,
         	$$x^2+y^2=a^2$$
         	""")
-        self.play(Write(textoMixto))
+        self.play(Write(tipesOfText))
         self.wait(3)
 
-class TextoMixtoDisplay(Scene): 
+class DisplayFormula(Scene): 
     def construct(self): 
-        textoMixto = TextMobject("""
-        	Esto es un texto normal,
+        tipesOfText = TextMobject("""
+        	This is a regular text,
         	$\\displaystyle\\frac{x}{y}$,
         	$$x^2+y^2=a^2$$
         	""")
-        self.play(Write(textoMixto))
+        self.play(Write(tipesOfText))
         self.wait(3)
 
-class PosicionTextoCentro(Scene):
+class TextInCenter(Scene):
     def construct(self):
-        texto = TextMobject("Texto genérico.")
-        self.play(Write(texto))
+        text = TextMobject("Text")
+        self.play(Write(text))
         self.wait(3)
 
-class PosicionTextoSuperior(Scene):
+class TextOnTopEdge(Scene):
     def construct(self):
-        texto = TextMobject("Texto genérico.")
-        texto.to_edge(UP)
-        self.play(Write(texto))
+        text = TextMobject("Text")
+        text.to_edge(UP)
+        self.play(Write(text))
         self.wait(3)
 
-class PosicionTextoInferior(Scene):
+class TextOnBottomEdge(Scene):
     def construct(self):
-        texto = TextMobject("Texto genérico.")
-        texto.to_edge(DOWN)
-        self.play(Write(texto))
+        text = TextMobject("Text")
+        text.to_edge(DOWN)
+        self.play(Write(text))
         self.wait(3)
 
-class PosicionTextoDerecha(Scene): #Probar con "Texto genérico ampliado"
+class TextOnRightEdge(Scene):
     def construct(self):
-        texto = TextMobject("Texto genérico.")
-        texto.to_edge(RIGHT)
-        self.play(Write(texto))
+        text = TextMobject("Text")
+        text.to_edge(RIGHT)
+        self.play(Write(text))
         self.wait(3)
 
-class PosicionTextoIzquierda(Scene):
+class TextOnLeftEdge(Scene):
     def construct(self):
-        texto = TextMobject("Texto genérico.")
-        texto.to_edge(LEFT)
-        self.play(Write(texto))
+        text = TextMobject("Text")
+        text.to_edge(LEFT)
+        self.play(Write(text))
         self.wait(3)
 
-class PosicionTextoSuperiorDerecha(Scene):
+class TextInUpperRightCorner(Scene):
     def construct(self):
-        texto = TextMobject("Texto genérico.")
-        texto.to_edge(UP+RIGHT)
-        self.play(Write(texto))
+        text = TextMobject("Text")
+        text.to_edge(UP+RIGHT)
+        self.play(Write(text))
         self.wait(3)
 
-class PosicionTextoInferiorIzquierda(Scene): 
-    def construct(self): #Este es un comentario, no es código
-        texto = TextMobject("Texto genérico.") #Este es un comentario, no es código
-        texto.to_edge(LEFT+DOWN)
-        self.play(Write(texto))
+class TextInLowerLeftCorner(Scene): 
+    def construct(self): 
+        text = TextMobject("Text") 
+        text.to_edge(LEFT+DOWN)
+        self.play(Write(text))
         self.wait(3)
 
-class PosicionPersonalizado1(Scene):
+class CustomPosition1(Scene):
     def construct(self):
-        textoM = TextMobject("Texto genérico.")
-        textoC = TextMobject("Texto genérico central.") #Texto de referencia
-        textoM.move_to(0.25*UP)  #Jugar con los valores numéricos
-        self.play(Write(textoM),Write(textoC))
+        textM = TextMobject("Text")
+        textC = TextMobject("Central text")
+        textM.move_to(0.25*UP) 
+        self.play(Write(textM),Write(textC))
         self.wait(3)
 
-class PosicionPersonalizado2(Scene): #move_to siempre es referente al centro
+class CustomPosition2(Scene):
     def construct(self):
-        textoM = TextMobject("Texto genérico.")
-        textoC = TextMobject("Texto genérico central.")
-        textoM.move_to(1*UP+1*RIGHT)
-        self.play(Write(textoM),Write(textoC))
+        textM = TextMobject("Text")
+        textC = TextMobject("Central text")
+        textM.move_to(1*UP+1*RIGHT)
+        self.play(Write(textM),Write(textC))
         self.wait(1)
-        textoM.move_to(1*UP+1*RIGHT) #El sistema de referencia es el centro
-        self.play(Write(textoM))
+        textM.move_to(1*UP+1*RIGHT) 
+        self.play(Write(textM))
         self.wait(3)
 
-class PosicionRelativa1(Scene):
+class RelativePosition1(Scene):
     def construct(self):
-        textoM = TextMobject("Texto relativo.")
-        textoC = TextMobject("Texto de referencia.")
-        textoM.next_to(textoC,LEFT,buff=1) #La posición toma como referencia la posición de textoC
-        self.play(Write(textoM),Write(textoC))
+        textM = TextMobject("Text")
+        textC = TextMobject("Reference text")
+        textM.next_to(textC,LEFT,buff=1) 
+        self.play(Write(textM),Write(textC))
         self.wait(3)
 
-class Tamanhos(Scene):
+class RelativePosition2(Scene):
+    def construct(self):
+        textM = TextMobject("Text")
+        textC = TextMobject("Reference text")
+        textM.shift(UP*0.1)
+        self.play(Write(textM),Write(textC))
+        self.wait(3)
+
+class RotateObject(Scene):
+    def construct(self):
+        textM = TextMobject("Text")
+        textC = TextMobject("Reference text")
+        textM.shift(UP)
+        textM.rotate(PI/4) 
+        self.play(Write(textM),Write(textC))
+        self.wait(2)
+        textM.rotate(PI/4)
+        self.wait(2)
+        textM.rotate(PI/4)
+        self.wait(2)
+        textM.rotate(PI/4)
+        self.wait(2)
+        textM.rotate(PI)
+        self.wait(2)
+
+class MirrorObject(Scene):
+    def construct(self):
+        textM = TextMobject("Text")
+        textM.flip(UP)
+        self.play(Write(textM))
+        self.wait(2)
+
+class SizeTextOnLaTeX(Scene):
 	def construct(self):
-		textoHuge = TextMobject("{\\Huge Huge Texto 012.\\#!?} Texto normal")
-		textohuge = TextMobject("{\\huge huge Texto 012.\\#!?} Texto normal")
-		textoLARGE = TextMobject("{\\LARGE LARGE Texto 012.\\#!?} Texto normal")
-		textoLarge = TextMobject("{\\Large Large Texto 012.\\#!?} Texto normal")
-		textolarge = TextMobject("{\\large large Texto 012.\\#!?} Texto normal")
-		textoNormal = TextMobject("{\\normalsize normal Texto 012.\\#!?} Texto normal")
-		textosmall = TextMobject("{\\small small Texto 012.\\#!?} Texto normal")
-		textofootnotesize = TextMobject("{\\footnotesize footnotesize Texto 012.\\#!?} Texto normal")
-		textoscriptsize = TextMobject("{\\scriptsize scriptsize Texto 012.\\#!?} Texto normal")
-		textotiny = TextMobject("{\\tiny tiny Texto 012.\\#!?} Texto normal")
-		textoHuge.to_edge(UP)
-		textohuge.next_to(textoHuge,DOWN,buff=0.1)
-		textoLARGE.next_to(textohuge,DOWN,buff=0.1)
-		textoLarge.next_to(textoLARGE,DOWN,buff=0.1)
-		textolarge.next_to(textoLarge,DOWN,buff=0.1)
-		textoNormal.next_to(textolarge,DOWN,buff=0.1)
-		textosmall.next_to(textoNormal,DOWN,buff=0.1)
-		textofootnotesize.next_to(textosmall,DOWN,buff=0.1)
-		textoscriptsize.next_to(textofootnotesize,DOWN,buff=0.1)
-		textotiny.next_to(textoscriptsize,DOWN,buff=0.1)
-		self.add(textoHuge,textohuge,textoLARGE,textoLarge,textolarge,textoNormal,textosmall,textofootnotesize,textoscriptsize,textotiny)
+		textHuge = TextMobject("{\\Huge Huge Text 012.\\#!?} Text")
+		texthuge = TextMobject("{\\huge huge Text 012.\\#!?} Text")
+		textLARGE = TextMobject("{\\LARGE LARGE Text 012.\\#!?} Text")
+		textLarge = TextMobject("{\\Large Large Text 012.\\#!?} Text")
+		textlarge = TextMobject("{\\large large Text 012.\\#!?} Text")
+		textNormal = TextMobject("{\\normalsize normal Text 012.\\#!?} Text")
+		textsmall = TextMobject("{\\small small Text 012.\\#!?} Texto normal")
+		textfootnotesize = TextMobject("{\\footnotesize footnotesize Text 012.\\#!?} Text")
+		textscriptsize = TextMobject("{\\scriptsize scriptsize Text 012.\\#!?} Text")
+		texttiny = TextMobject("{\\tiny tiny Texto 012.\\#!?} Text normal")
+		textHuge.to_edge(UP)
+		texthuge.next_to(textHuge,DOWN,buff=0.1)
+		textLARGE.next_to(texthuge,DOWN,buff=0.1)
+		textLarge.next_to(textLARGE,DOWN,buff=0.1)
+		textlarge.next_to(textLarge,DOWN,buff=0.1)
+		textNormal.next_to(textlarge,DOWN,buff=0.1)
+		textsmall.next_to(textNormal,DOWN,buff=0.1)
+		textfootnotesize.next_to(textsmall,DOWN,buff=0.1)
+		textscriptsize.next_to(textfootnotesize,DOWN,buff=0.1)
+		texttiny.next_to(textscriptsize,DOWN,buff=0.1)
+		self.add(textHuge,texthuge,textLARGE,textLarge,textlarge,textNormal,textsmall,textfootnotesize,textscriptsize,texttiny)
 		self.wait(3)
 
-class TamanhosPersonalizados(Scene):
+class TextFonts(Scene):
 	def construct(self):
-		texto = TextMobject("{\\fontsize{60}{70}\\selectfont Texto.}")
-		self.play(Write(texto))
-		self.wait(3)
-
-class Fuentes(Scene):
-	def construct(self):
-		textoNormal = TextMobject("{Texto normal 012.\\#!?} Texto normal")
-		textoItalica = TextMobject("\\textit{Texto en itálicas 012.\\#!?} Texto normal")
-		textoMaquina = TextMobject("\\texttt{Texto en máquina 012.\\#!?} Texto normal")
-		textoNegritas = TextMobject("\\textbf{Texto en negritas 012.\\#!?} Texto normal")
-		textoSL = TextMobject("\\textsl{Texto en sl 012.\\#!?} Texto normal")
-		textoSC = TextMobject("\\textsc{Texto en sc 012.\\#!?} Texto normal")
-		textoNormal.to_edge(UP)
-		textoItalica.next_to(textoNormal,DOWN,buff=.5)
-		textoMaquina.next_to(textoItalica,DOWN,buff=.5)
-		textoNegritas.next_to(textoMaquina,DOWN,buff=.5)
-		textoSL.next_to(textoNegritas,DOWN,buff=.5)
-		textoSC.next_to(textoSL,DOWN,buff=.5)
-		self.add(textoNormal,textoItalica,textoMaquina,textoNegritas,textoSL,textoSC)
+		textNormal = TextMobject("{Roman serif text 012.\\#!?} Text")
+		textItalic = TextMobject("\\textit{Italic text 012.\\#!?} Text")
+		textTypewriter = TextMobject("\\texttt{Typewritter text 012.\\#!?} Text")
+		textBold = TextMobject("\\textbf{Bold text 012.\\#!?} Text")
+		textSL = TextMobject("\\textsl{Slanted text 012.\\#!?} Text")
+		textSC = TextMobject("\\textsc{Small caps text 012.\\#!?} Text")
+		textNormal.to_edge(UP)
+		textItalic.next_to(textNormal,DOWN,buff=.5)
+		textTypewriter.next_to(textItalic,DOWN,buff=.5)
+		textBold.next_to(textTypewriter,DOWN,buff=.5)
+		textSL.next_to(textBold,DOWN,buff=.5)
+		textSC.next_to(textSL,DOWN,buff=.5)
+		self.add(textNormal,textItalic,textTypewriter,textBold,textSL,textSC)
 		self.wait(3)
