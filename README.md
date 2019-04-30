@@ -8,7 +8,7 @@
 4. [Transformations](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/4_transform/scenes.md)/YouTube
 5. [Visual tools](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/5_visual_tools/scenes.md)/YouTube
 6. [Introduction in 2D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6a_plots_2D/scenes.md)/YouTube
-7. [Introduction in 3D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6b_plots_3D/scenes.md)/YouTube/Scenes
+7. [Introduction in 3D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6b_plots_3D/scenes.md)/YouTube
 8. Add audio/YouTube
 9. Ad svg images/YouTube/Scenes
 10. First project/YouTube
