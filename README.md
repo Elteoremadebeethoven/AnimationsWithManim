@@ -24,7 +24,7 @@ Extras:
 [Manim](https://github.com/3b1b/manim) is a free tool for Python created by [Grant Sanderson](http://www.3blue1brown.com/) ([twitter](https://twitter.com/3blue1brown?lang=es)), matematician from Stantford and owner of the channel of YouTube [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw). It is specialized in scientific subjects, mainly mathematical, so it is based on LaTeX commands (mainly in TeX).
 
 ## What is LaTeX?
-LaTeX is a processor of specialized texts in the scientific field, however, Manim only uses the TeX commands (with some exceptions), which refers to the writing of formulas. An example of the code in TeX is:
+LaTeX is a processor of specialized texts in the scientific field, however, manim only uses TeX commands (with some exceptions), which refers to the writing of formulas. An example of the code in TeX is:
 ```latex
 \frac{d}{dx}f(x)=\lim_{h\to 0}\frac{f(x+h)-f(x)}{h}.
 ```
