@@ -43,13 +43,13 @@ No, with 512 MB of RAM and an Intel Core Duo processor (or similar) is more than
 ## What advantages does Manim offer with respect to other animation tools?
 ### Advantages:
 * It is free and legal.
-* Works on Windows, GNU / Linux (any distribution) and Mac perfectly, although it is preferable to use Mac or GNU / Linux.
+* Works on Windows, GNU/Linux (any distribution) and Mac perfectly.
 * Can be used in old computers.
 * Being open source is completely customizable to the user's taste.
 * It is constantly improving.
 * The video files are very high quality and light.
-* The formulas are created using the TeX commands, so they are of professional quality.
-* In the case of not having programming knowledge, it is a good tool to start learning Python 3 and LaTeX.
+* The formulas are created using TeX commands, so they are of professional quality.
+* In the case of not having programming knowledge, it is a good tool to start learning Python and LaTeX.
 ### Disadvantages:
 * If you do not have the LaTeX package (complete) installed, it will occupy more than 4 GB of space on your computer.
 * A graphic interface is not used to perform the animations, everything is based on the Python 3 and TeX commands. The example of the classic Hello world! would be
