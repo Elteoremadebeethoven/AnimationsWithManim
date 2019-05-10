@@ -1,6 +1,6 @@
-# Instación en MacOS
+# Instalation on MacOS
 
-Ver video tutorial en YouTube.
+Link to video tutorial.
 
 ## Instalación de Manim
 
