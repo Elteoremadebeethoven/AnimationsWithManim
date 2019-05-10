@@ -1,27 +1,29 @@
-# Instación en GNU/Linux
+# Instalation on GNU/Linux
 
-Ver video tutorial en YouTube.
-
-## Pasos previos a la instalación
-
-### 1. Descargar de Manim 
-
-* Ir al [repositorio oficial](https://github.com/3b1b/manim), click en el recuadro verde "Clone or download" y luego click en "Download ZIP".
-
-<p align="center"><img src ="/English/0_instalation/gnuLinux/gifs/manimDescarga.png" /></p>
-
-* Descomprimir carpeta manim-master preferentemente en el directorio principal.
+Link to video tutorial.
 
 
-## Instalación usando la terminal:
-Abrir terminal y copiar los siguientes comandos.
-### Instalación de LaTeX:
+## Instalation with the terminal:
+Open a terminal an run the follow commands:
 
+### Install de LaTeX:
+Debian distributions:
 ```sh
 $ sudo apt-get install texlive-full
 ```
+Arch distributions:
+```sh
+$ sudo pacman -S texlive-most
+```
+Fedora distributions:
+```sh
+$ yum -y install texlive-collection-latexextra
+```
 
-### Instalación de pip3:
+### Install python3.7
+Depends of your distribution
+
+### Install pip:
 
 ```sh
 $ mkdir pip
@@ -30,56 +32,58 @@ $ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 $ python3 get-pip.py
 ```
 
-### Instalación de ffmpeg:
+### Install ffmpeg:
 
 ```sh
 $ sudo apt-get install ffmpeg
 ```
 
-### Instalación de sox:
+### Install sox:
 
 ```sh
 $ sudo apt-get install sox
 ```
 
-### Instalación de paqueterías previas para instalar pycairo:
+### Install pycairo dependences (only for Debian distributions):
 
 ```sh
 $ sudo apt-get install libcairo2-dev libjpeg-dev libgif-dev python3-dev libffi-dev
+```
+
+### Install pycairo, pyreadline, pydub:
+
+```sh
+$ python3 -m pip install pycairo
 $ python3 -m pip install pyreadline
 $ python3 -m pip install pydub
 ```
 
-### Instalación de pycairo:
+### Download Manim
 
-```sh
-$ python3 -m pip install pycairo
-```
+### Download Manim from [actual version](https://github.com/3b1b/manim), or [3/Feb/2019 version](https://github.com/3b1b/manim/tree/3b088b12843b7a4459fe71eba96b70edafb7aa78).
 
-## Instalación de requerimientos:
-Moverse a la carpeta de manim:
+<p align="center"><img src ="/English/0_instalation/gnuLinux/gifs/manimDescarga.png" /></p>
+
+Unzip the file into a directory that does not have spaces
+
+## Install list requirements.txt:
+Move the terminal to the manim-master directory:
 
 ```sh
 ~/manim-master$
 ```
 
-Luego escribir:
+Then run:
 
 ```sh
 $ python3 -m pip install -r requirements.txt
 ```
 
-# Ejecución de Manim
+# Run Manim
 
-Para ejecutar Manim por primera vez hay que ir a la carpeta de manim y escribir:
+Run this command in manim-master directory:
 
 ```sh
 $ python3 -m manim example_scenes.py SquareToCircle -pl
 ```
 
-Ese código debería generar algo como esto:
-
-<p align="center"><img src ="/English/0_instalation/gnuLinux/gifs/compilacion.gif" /></p>
-
-# Almacenamiento
-Al ejecutar manim por primera vez se crearà una carpeta llamada "media" y un archvio de texto "media_dir.txt". En la carpeta "media" se almacenaràn los videos por defecto, si deseas modificar la carpeta donde se exporten los videos tienes que escribir el directorio completo en el archivo "media_dir.txt".
