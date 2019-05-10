@@ -20,7 +20,7 @@ Go to [MacTeX](http://www.tug.org/mactex/), download the .pkg file and install i
 <p align="center"><img src ="/English/0_instalation/macOS/gifs/MacP2.gif" /></p>
 
 ### Install Python 3
-Go to official web of [Python](https://www.python.org/), and download the 3.7 version ([video ayuda](https://www.youtube.com/watch?v=0hGzGdRQeak)).
+Go to official web of [Python](https://www.python.org/), and download the 3.7 version ([help](https://www.youtube.com/watch?v=0hGzGdRQeak)).
 
 <p align="center"><img src ="/English/0_instalation/macOS/gifs/MacP3.gif" /></p>
 
