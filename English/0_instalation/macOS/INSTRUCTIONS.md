@@ -14,7 +14,7 @@ Copy the code from [Homebrew](https://brew.sh/index_es) and paste it in the term
 
 <p align="center"><img src ="/English/0_instalation/macOS/gifs/MacP1.gif" /></p>
 
-### InstallLaTeX (versión completa)
+### Install LaTeX (versión completa)
 Go to [MacTeX](http://www.tug.org/mactex/), download the .pkg file and install it ([help](https://www.youtube.com/watch?v=5CNmIaRxS20)).
 
 <p align="center"><img src ="/English/0_instalation/macOS/gifs/MacP2.gif" /></p>
@@ -70,7 +70,7 @@ brew install pkg-config
 <p align="center"><img src ="/English/0_instalation/macOS/gifs/pd.png" /></p>
 
 ### Install list requirements.txt
-Move the terminal in the manim-master folder and run this:
+Move the terminal to manim-master folder and run this:
 
 ```sh
 python3 -m pip install -r requirements.txt
