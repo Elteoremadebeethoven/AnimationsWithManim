@@ -58,8 +58,6 @@ $ python3 -m pip install pyreadline
 $ python3 -m pip install pydub
 ```
 
-### Download Manim
-
 ### Download Manim from [actual version](https://github.com/3b1b/manim), or [3/Feb/2019 version](https://github.com/3b1b/manim/tree/3b088b12843b7a4459fe71eba96b70edafb7aa78).
 
 <p align="center"><img src ="/English/0_instalation/gnuLinux/gifs/manimDescarga.png" /></p>
