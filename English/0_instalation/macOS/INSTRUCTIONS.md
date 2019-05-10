@@ -10,7 +10,7 @@ Search "terminal" on Spotlight
 <p align="center"><img src ="/English/0_instalation/macOS/gifs/terminal.png" /></p>
 
 ### Install Homebrew
-Copy the code from [Homebrew](https://brew.sh/index_es) and paste it in the terminal
+Copy the code from [Homebrew](https://brew.sh) and paste it in the terminal
 
 <p align="center"><img src ="/English/0_instalation/macOS/gifs/MacP1.gif" /></p>
 
