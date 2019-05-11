@@ -1,6 +1,6 @@
 # Instalation on GNU/Linux
 
-Link to video tutorial.
+Link to [video tutorial](https://www.youtube.com/watch?v=z_WJaHYH66M).
 
 
 ## Instalation with the terminal:
