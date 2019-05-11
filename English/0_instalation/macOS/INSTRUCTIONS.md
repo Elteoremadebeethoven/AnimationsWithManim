@@ -1,6 +1,6 @@
 # Instalation on MacOS
 
-Link to video tutorial.
+Link to [video tutorial](https://www.youtube.com/watch?v=uZj_GQc6pN4).
 
 ## Install dependences.
 
