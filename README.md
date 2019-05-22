@@ -55,7 +55,8 @@ No, with 512 MB of RAM and an Intel Core Duo processor (or similar) is more than
 * If you do not have the LaTeX package (complete) installed, it will occupy more than 4 GB of space on your computer.
 * A graphic interface is not used to perform the animations, everything is based on the Python 3 and TeX commands. The example of the classic Hello world! would be
 ```python
-from big_ol_pile_of_manim_imports import *
+from manimlib.imports import *
+
 class HelloWorld(Scene):
     def construct(self):
         helloWorld = TextMobject("Hello world!")
