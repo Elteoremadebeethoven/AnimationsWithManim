@@ -269,7 +269,7 @@ class SizeTextOnLaTeX(Scene):
 ```python3
 class TextFonts(Scene):
     def construct(self):
-        textNormal = TextMobject("{Roman serif text 012.\\#!?} Text")
+        textNormal = TextMobject("\\textrm{Roman serif text 012.\\#!?} Text")
         textItalic = TextMobject("\\textit{Italic text 012.\\#!?} Text")
         textTypewriter = TextMobject("\\texttt{Typewritter text 012.\\#!?} Text")
         textBold = TextMobject("\\textbf{Bold text 012.\\#!?} Text")
