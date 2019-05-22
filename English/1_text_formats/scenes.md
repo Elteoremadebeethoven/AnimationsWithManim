@@ -211,7 +211,8 @@ class RotateObject(Scene):
         textM = TextMobject("Text")
         textC = TextMobject("Reference text")
         textM.shift(UP)
-        textM.rotate(PI/4) 
+        textM.rotate(PI/4) # <- Radians
+        # You can use .rotate(45*DEGREES) too
         self.play(Write(textM),Write(textC))
         self.wait(2)
         textM.rotate(PI/4)
