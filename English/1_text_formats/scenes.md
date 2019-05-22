@@ -37,7 +37,7 @@ class Formula(Scene):
 <p align="center"><img src ="/English/1_text_formats/gifs/Formula.gif" /></p>
 
 ```python3
-class TipesOfText(Scene): 
+class TypesOfText(Scene): 
     def construct(self): 
         typesOfText = TextMobject("""
             This is a regular text,
@@ -51,7 +51,7 @@ class TipesOfText(Scene):
 <p align="center"><img src ="/English/1_text_formats/gifs/TipesOfText.gif" /></p>
 
 ```python3
-class TipesOfText2(Scene): 
+class TypesOfText2(Scene): 
     def construct(self): 
         typesOfText = TextMobject("""
             This is a regular text,
@@ -227,7 +227,7 @@ class RotateObject(Scene):
 <p align="center"><img src ="/English/1_text_formats/gifs/RotateObject.gif" /></p>
 
 ```python3
-class MirrorObject(Scene):
+class FlipObject(Scene):
     def construct(self):
         textM = TextMobject("Text")
         textM.flip(UP)
