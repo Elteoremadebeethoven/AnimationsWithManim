@@ -5,7 +5,7 @@
 ### This tutorial is based on the manim version of [3 february of 2019](https://github.com/3b1b/manim/tree/3b088b12843b7a4459fe71eba96b70edafb7aa78) 
 
 0. Installation on [Windows](https://www.youtube.com/watch?v=ZltiKHFWmv8), [GNU/Linux](https://www.youtube.com/watch?v=z_WJaHYH66M) and [Mac](https://www.youtube.com/watch?v=uZj_GQc6pN4).
-1. [Text format](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/1_text_formats/scenes.md)/[Part 1 - Youtube](https://www.youtube.com/watch?v=yI2YJff9SgI)/[Part 2 - YouTube](https://www.youtube.com/watch?v=Km09KYWb9ag)
+1. [Text format](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/1_text_formats/scenes.md)/[Part 1 - Youtube](https://www.youtube.com/watch?v=yI2YJff9SgI)/[Part 2 - YouTube](https://www.youtube.com/watch?v=Km09KYWb9ag)/[Part 3 - YouTube](https://www.youtube.com/watch?v=gIvQsqXy5os)
 2. Tex formulas/YouTube
 3. [Text like arrays and basic animations](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/3_text_like_arrays/scenes.md)/YouTube
 4. [Transformations](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/4_transform/scenes.md)/YouTube
@@ -17,8 +17,8 @@
 10. First project/YouTube
 
 Extras:
-* Leave progress bars by default.
-* Customize the rendering.
+* [Leave progress bars by default.](https://www.youtube.com/watch?v=K8dVFqXR2JM)
+* [Rendering settings.](https://www.youtube.com/watch?v=d_2V5mC2hx0)
 * Modify the directory "media".
 
 ## What is Manim?
