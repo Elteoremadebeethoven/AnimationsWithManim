@@ -46,7 +46,7 @@ brew install ffmpeg
 ```sh
 brew install sox
 ```
-#### Paqueterías extra
+#### More packages
 ```sh
 brew install cairo --use-clang
 ```
