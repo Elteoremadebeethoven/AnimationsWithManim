@@ -45,7 +45,7 @@ This tutorial works with [this manim version (feb/03/19)](https://github.com/3b1
 
 <p align="center"><img src ="/English/extra/render_old_projects/capturas/capt3.png"/></p>
 
-Código:
+Code:
 ```python3
             path=self.select_image(filename_or_array)
             #path = get_full_raster_image_path(filename_or_array)
@@ -76,7 +76,7 @@ Código:
 
 <p align="center"><img src ="/English/extra/render_old_projects/capturas/capt4.png"/></p>
 
-Código:
+Code:
 ```python3
                 "PiCreatures_plain.svg"
 ```
@@ -85,7 +85,7 @@ Código:
 
 <p align="center"><img src ="/English/extra/render_old_projects/capturas/capt5.png"/></p>
 
-Códigos:
+Code:
 ```python3
         "file_name": "Bubbles_speech.svg",
 ```
