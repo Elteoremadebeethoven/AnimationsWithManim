@@ -112,7 +112,7 @@ from manimlib.utils.space_ops import get_norm
 
 ### 2.7 Open ```manimlib/utils/sounds.py``` and make the changes shown in the code above:
 
-<p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/capturas/sound.png"/></p>
+<p align="center"><img src ="/English/extra/render_old_projects/capturas/sound.png"/></p>
 
 
 ```python3
