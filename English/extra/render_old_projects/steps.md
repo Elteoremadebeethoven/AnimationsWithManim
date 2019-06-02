@@ -123,9 +123,7 @@ def select_sound(sound_file_name):
         return sound_file_name
     else:
         return "generic_sound"
-```
 
-```python3
 # Locate the cursor at the end of line 36, create a new line and paste the following:
         select_sound(sound_file_name),
 ```
