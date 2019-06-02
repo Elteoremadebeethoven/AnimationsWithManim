@@ -4,11 +4,11 @@ Este tutorial funciona con la versión de [manim del 3 de Febrero del 2019](http
 ## 1. Descarga las siguientes imágenes
 ### 1.1 Descarga esta imagen como generic.png en ```media/designs/raster_images```
 
-<p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/archivos/generic.png" width="400" /></p>
+<p align="center"><img src ="/English/extra/render_old_projects/archivos/generic.png" width="400" /></p>
 
 ### 1.2 Descarga esta imagen como generic.svg en ```media/designs/svg_images```
 
-<p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/archivos/generic.svg" width="400" /></p>
+<p align="center"><img src ="/English/extra/render_old_projects/archivos/generic.svg" width="400" /></p>
 
 ### 1.3 Después mueve los tres archivos .svg de ```manimlib/files``` a ```media/designs/svg_images```
 
