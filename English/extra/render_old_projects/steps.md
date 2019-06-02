@@ -124,6 +124,6 @@ def select_sound(sound_file_name):
     else:
         return "generic_sound"
 
-# Locate the cursor at the end of line 36, create a new line and paste the following:
+# Replace the line 37 with:
         select_sound(sound_file_name),
 ```
