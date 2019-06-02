@@ -28,7 +28,7 @@ Este tutorial funciona con la versión de [manim del 3 de Febrero del 2019](http
         ])
         return NumberLine(**new_config)
 ```
-<p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/capturas/coord_syst.png" width="700" /></p>
+<p align="center"><img src ="/English/extra/render_old_projects/capturas/coord_syst.png" width="700" /></p>
 
 
 ### 2.2 Añade la siguiente linea en ```manimlib/mobject/svg/svg_mobject.py```
@@ -37,12 +37,12 @@ Este tutorial funciona con la versión de [manim del 3 de Febrero del 2019](http
             os.path.join(SVG_IMAGE_DIR, "generic.svg")
 ```
 
-<p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/capturas/capt2.png" width="700" /></p>
+<p align="center"><img src ="/English/extra/render_old_projects/capturas/capt2.png" width="700" /></p>
 
 ### 2.3 Abre ```manimlib/mobject/types/image_mobject.py``` y remplaza la parte seleccionada de la imagen izquierda por el código que está en la parte derecha.
 
 
-<p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/capturas/capt3.png"/></p>
+<p align="center"><img src ="/English/extra/render_old_projects/capturas/capt3.png"/></p>
 
 Código:
 ```python3
@@ -72,7 +72,7 @@ Código:
 
 ### 2.4 Abre ```manimlib/for_3b1b_videos/pi_creature.py``` y remplaza la parte seleccionada de la imagen izquierda por el código que está en la parte derecha.
 
-<p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/capturas/capt4.png"/></p>
+<p align="center"><img src ="/English/extra/render_old_projects/capturas/capt4.png"/></p>
 
 Código:
 ```python3
@@ -81,7 +81,7 @@ Código:
 
 ### 2.5 Abre ```manimlib/mobject/svg/drawings.py``` y remplaza las partes seleccionadas de la imagen izquierda por el código que está en la parte derecha.
 
-<p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/capturas/capt5.png"/></p>
+<p align="center"><img src ="/English/extra/render_old_projects/capturas/capt5.png"/></p>
 
 Códigos:
 ```python3
@@ -98,7 +98,7 @@ Códigos:
 from manimlib.utils.space_ops import get_norm
 ```
 
-<p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/capturas/capt6.png" width="700"/></p>
+<p align="center"><img src ="/English/extra/render_old_projects/capturas/capt6.png" width="700"/></p>
 
 ### 2.7 Abre ```manimlib/scene/three_d_scene.py``` y cambia la linea 149 por:
 
@@ -106,7 +106,7 @@ from manimlib.utils.space_ops import get_norm
         if self.camera_config["pixel_width"] == PRODUCTION_QUALITY_CAMERA_CONFIG["pixel_width"]:
 ```
 
-<p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/capturas/capt7.png"/></p>
+<p align="center"><img src ="/English/extra/render_old_projects/capturas/capt7.png"/></p>
 
 ### 2.7 Abre ```manimlib/utils/sounds.py``` y realiza las modificaciones que se muestran:
 
