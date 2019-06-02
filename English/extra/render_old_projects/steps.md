@@ -1,23 +1,23 @@
-# Cómo aprender Manim por cuenta propia.
-Este tutorial funciona con la versión de [manim del 3 de Febrero del 2019](https://github.com/3b1b/manim/tree/3b088b12843b7a4459fe71eba96b70edafb7aa78). 
+# Learn Manim by yourself.
+This tutorial works with [this manim version (feb/03/19)](https://github.com/3b1b/manim/tree/3b088b12843b7a4459fe71eba96b70edafb7aa78). 
 
-## 1. Descarga las siguientes imágenes
-### 1.1 Descarga esta imagen como generic.png en ```media/designs/raster_images```
+## 1. Download this files.
+### 1.1 Download this image with the name "generic.png" and put it in ```media/designs/raster_images```
 
 <p align="center"><img src ="/English/extra/render_old_projects/archivos/generic.png" width="400" /></p>
 
-### 1.2 Descarga esta imagen como generic.svg en ```media/designs/svg_images```
+### 1.2 Download this image with the name "generic.svg" and put it in ```media/designs/svg_images```
 
 <p align="center"><img src ="/English/extra/render_old_projects/archivos/generic.svg" width="400" /></p>
 
-### 1.3 Después mueve los tres archivos .svg de ```manimlib/files``` a ```media/designs/svg_images```
+### 1.3 Copy the three .svg files from ```manimlib/files``` to ```media/designs/svg_images```
 
-### 1.4 Descarga [este](https://drive.google.com/open?id=1V_LpJoidm2tAVVBusKaHlky2-MLehTuM) archivo de sonido y ponlo en ```media/designs/sounds```
+### 1.4 Download [this sound file](https://drive.google.com/open?id=1V_LpJoidm2tAVVBusKaHlky2-MLehTuM) with the name "generic_sound.wav" and put it in ```media/designs/sounds```
 
 
-## 2. Modificar los siguientes archivos:
+## 2. Modify the following files:
 
-### 2.1 En ```manimlib/mobject/coordinate_systems.py``` agrega en la linea 54:
+### 2.1 ```manimlib/mobject/coordinate_systems.py``` Add this code in the line 54:
 
 ```python3
     def get_axis(self, min_val, max_val, axis_config):
@@ -31,7 +31,7 @@ Este tutorial funciona con la versión de [manim del 3 de Febrero del 2019](http
 <p align="center"><img src ="/English/extra/render_old_projects/capturas/coord_syst.png" width="700" /></p>
 
 
-### 2.2 Añade la siguiente linea en ```manimlib/mobject/svg/svg_mobject.py```
+### 2.2 Add this line in ```manimlib/mobject/svg/svg_mobject.py```
 
 ```python3
             os.path.join(SVG_IMAGE_DIR, "generic.svg")
@@ -39,7 +39,8 @@ Este tutorial funciona con la versión de [manim del 3 de Febrero del 2019](http
 
 <p align="center"><img src ="/English/extra/render_old_projects/capturas/capt2.png" width="700" /></p>
 
-### 2.3 Abre ```manimlib/mobject/types/image_mobject.py``` y remplaza la parte seleccionada de la imagen izquierda por el código que está en la parte derecha.
+### 2.3 Open ```manimlib/mobject/types/image_mobject.py``` and replaces the selected part of the left side with the code that is on the right side.
+
 
 
 <p align="center"><img src ="/English/extra/render_old_projects/capturas/capt3.png"/></p>
@@ -70,7 +71,8 @@ Código:
                 return path
 ```
 
-### 2.4 Abre ```manimlib/for_3b1b_videos/pi_creature.py``` y remplaza la parte seleccionada de la imagen izquierda por el código que está en la parte derecha.
+### 2.4 Open ```manimlib/for_3b1b_videos/pi_creature.py``` and replaces the selected part of the left side with the code that is on the right side.
+
 
 <p align="center"><img src ="/English/extra/render_old_projects/capturas/capt4.png"/></p>
 
@@ -79,7 +81,7 @@ Código:
                 "PiCreatures_plain.svg"
 ```
 
-### 2.5 Abre ```manimlib/mobject/svg/drawings.py``` y remplaza las partes seleccionadas de la imagen izquierda por el código que está en la parte derecha.
+### 2.5 Open ```manimlib/mobject/svg/drawings.py``` and replaces the selected part of the left side with the code that is on the right side.
 
 <p align="center"><img src ="/English/extra/render_old_projects/capturas/capt5.png"/></p>
 
@@ -92,7 +94,7 @@ Códigos:
             SVGMobject.__init__(self,file_name="Bubbles_speech" ,**kwargs)
 ```
 
-### 2.6 Abre ```manimlib/once_useful_constructs/light.py``` y en la linea 21 añade:
+### 2.6 Open ```manimlib/once_useful_constructs/light.py``` and add this code in the 21 line:
 
 ```python3
 from manimlib.utils.space_ops import get_norm
@@ -100,7 +102,7 @@ from manimlib.utils.space_ops import get_norm
 
 <p align="center"><img src ="/English/extra/render_old_projects/capturas/capt6.png" width="700"/></p>
 
-### 2.7 Abre ```manimlib/scene/three_d_scene.py``` y cambia la linea 149 por:
+### 2.7 Open ```manimlib/scene/three_d_scene.py``` and replache the 149 with this line:
 
 ```python3
         if self.camera_config["pixel_width"] == PRODUCTION_QUALITY_CAMERA_CONFIG["pixel_width"]:
@@ -108,7 +110,7 @@ from manimlib.utils.space_ops import get_norm
 
 <p align="center"><img src ="/English/extra/render_old_projects/capturas/capt7.png"/></p>
 
-### 2.7 Abre ```manimlib/utils/sounds.py``` y realiza las modificaciones que se muestran:
+### 2.7 Open ```manimlib/utils/sounds.py``` and make the changes shown in the code above:
 
 <p align="center"><img src ="/Español/extras/aprender_manim_cuenta_propia_v1/capturas/sound.png"/></p>
 
