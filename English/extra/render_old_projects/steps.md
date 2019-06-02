@@ -116,7 +116,7 @@ from manimlib.utils.space_ops import get_norm
 
 
 ```python3
-# Agrega este codigo debajo de la linea 41
+# Add this code below line 41
 def select_sound(sound_file_name):
     try_sound=os.path.join(SOUND_DIR, sound_file_name)
     if os.path.exists(try_sound):
@@ -126,6 +126,6 @@ def select_sound(sound_file_name):
 ```
 
 ```python3
-# Ubica el cursor al final de la linea 36, crea una nueva linea y pega lo siguiente:
+# Locate the cursor at the end of line 36, create a new line and paste the following:
         select_sound(sound_file_name),
 ```
