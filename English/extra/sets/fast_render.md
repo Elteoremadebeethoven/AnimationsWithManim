@@ -33,7 +33,7 @@ parser.add_argument(
         ),
 ```
 ```python3
-  "fps": args.fps
+  "fps": args.fps,
 ```
 ```python3
   if args.low_quality:
