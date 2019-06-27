@@ -101,6 +101,7 @@ class TransformIssuesSolutionInfallible(Scene):
 		#Create a copy of the objects
 
 		text_1_1_c=TextMobject("B")\
+				   .match_style(text_1[1])\
 				   .match_width(text_1[1])\
 				   .move_to(text_1[1])
 
