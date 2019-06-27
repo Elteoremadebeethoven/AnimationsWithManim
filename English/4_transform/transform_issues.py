@@ -3,6 +3,7 @@ from big_ol_pile_of_manim_imports import *
 class TextLike1DArrays(Scene):
 	def construct(self):
 		text=TextMobject("Te","xt")
+		# text=TextMobject("Te","xt")[0] # <- Recent versions
 		for i in text:
 			self.play(FadeIn(i))
 			self.wait()
@@ -12,6 +13,7 @@ class TextLike1DArrays(Scene):
 class TextLike2DArraysV1(Scene):
 	def construct(self):
 		text=TextMobject("Te","xt")
+		# text=TextMobject("Te","xt")[0] # <- Recent versions
 		self.play(FadeIn(text[0][0]))
 		self.play(FadeIn(text[0][1]))
 		self.play(FadeIn(text[1][0]))
@@ -30,6 +32,7 @@ class TextLike2DArraysV2(Scene):
 class TextLike2DArraysV3(Scene):
 	def construct(self):
 		text=TextMobject("Te","xt")
+		# text=TextMobject("Te","xt")[0] # <- Recent versions
 		for i in range(len(text)):
 			for j in range(len(text[i])):
 				self.play(FadeIn(text[i][j]))
@@ -40,8 +43,10 @@ class TransformIssues(Scene):
 	def construct(self):
 		#                   0   1   2
 		text_1=TextMobject("A","B","C")
+		# text_1=TextMobject("A","B","C")[0] # <- Recent versions
 		#                   0
 		text_2=TextMobject("B")
+		# text_2=TextMobject("B")[0]
 
 		text_2.next_to(text_1,UP,buff=1)
 
@@ -66,8 +71,10 @@ class TransformIssuesSolution1(Scene):
 	def construct(self):
 		#                   0   1   2
 		text_1=TextMobject("A","B","C")
+		# text_1=TextMobject("A","B","C")[0] # <- Recent versions
 		#                   0
 		text_2=TextMobject("B")
+		# text_2=TextMobject("B")[0]
 
 		text_2.next_to(text_1,UP,buff=1)
 
@@ -93,8 +100,10 @@ class TransformIssuesSolutionInfallible(Scene):
 	def construct(self):
 		#                   0   1   2
 		text_1=TextMobject("A","B","C")
+		# text_1=TextMobject("A","B","C")[0] # <- Recent versions
 		#                   0
 		text_2=TextMobject("B")
+		# text_2=TextMobject("B")[0]
 
 		text_2.next_to(text_1,UP,buff=1)
 
