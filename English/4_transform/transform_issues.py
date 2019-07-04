@@ -66,6 +66,18 @@ class TransformIssues(Scene):
 			)
 
 		self.wait()
+		
+class TransformVGroup(Scene):
+    def construct(self):
+        text_n=TextMobject("A")
+        text_v=VGroup(TextMobject("A")).next_to(text_n,DOWN)
+
+        self.play(Write(text_n))
+
+        self.play(ReplacementTransform(text_n,text_v))
+	#Solution
+	#         ReplacementTransform(text_n,text_v[0])
+        self.wait()
 
 class TransformIssuesSolution1(Scene):
 	def construct(self):
