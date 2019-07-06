@@ -20,11 +20,11 @@ Settings:
 * [Leave progress bars by default.](https://www.youtube.com/watch?v=K8dVFqXR2JM)
 * [Rendering settings.](https://www.youtube.com/watch?v=d_2V5mC2hx0)
 * [Modify the directory "media".](https://www.youtube.com/watch?v=I9rHHiKqTWY)
-* [Learn Manim by yourself - How to render most files in old_projects.](https://www.youtube.com/watch?v=vzyzqv8Sp8Y)
 * [Set FPS via terminal.](https://www.youtube.com/watch?v=cyIz0Oh3lWY)
 * [Export as GIF.](https://www.youtube.com/watch?v=juFfUwJUTtI)
 
 Extras:
+* [Learn Manim by yourself - How to render most files in old_projects.](https://www.youtube.com/watch?v=vzyzqv8Sp8Y)
 * [How to create your own Number Creature.](https://www.youtube.com/watch?v=KGdA8IB6JL0)
 
 ## What is Manim?
