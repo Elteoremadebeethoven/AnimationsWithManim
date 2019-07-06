@@ -16,10 +16,16 @@
 9. Update functions/YouTube
 10. First project/YouTube
 
-Extras:
+Settings:
 * [Leave progress bars by default.](https://www.youtube.com/watch?v=K8dVFqXR2JM)
 * [Rendering settings.](https://www.youtube.com/watch?v=d_2V5mC2hx0)
-* Modify the directory "media".
+* [Modify the directory "media".](https://www.youtube.com/watch?v=I9rHHiKqTWY)
+* [Learn Manim by yourself - How to render most files in old_projects.](https://www.youtube.com/watch?v=vzyzqv8Sp8Y)
+* [Set FPS via terminal.](https://www.youtube.com/watch?v=cyIz0Oh3lWY)
+* [Export as GIF](https://www.youtube.com/watch?v=juFfUwJUTtI)
+
+Extras:
+* [How to create your own Number Creature](https://www.youtube.com/watch?v=KGdA8IB6JL0)
 
 ## What is Manim?
 [Manim](https://github.com/3b1b/manim) is a free tool for Python created by [Grant Sanderson](http://www.3blue1brown.com/) ([twitter](https://twitter.com/3blue1brown?lang=es)), matematician from Stantford and owner of the channel of YouTube [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw). It is specialized in scientific subjects, mainly mathematical, so it is based on LaTeX commands (mainly in TeX).
