@@ -12,8 +12,8 @@
 5. [Visual tools](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/5_visual_tools/scenes.md)/[YouTube](false_link)
 6. [Introduction in 2D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6a_plots_2D/scenes.md)/YouTube
 7. [Introduction in 3D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6b_plots_3D/scenes.md)/YouTube
-8. Add audio/YouTube
-9. Add svg images/YouTube
+8. Add images, svgs and audio/YouTube
+9. Update functions/YouTube
 10. First project/YouTube
 
 Extras:
