@@ -118,7 +118,7 @@ class MoveCamera2(ThreeDScene):
 <p align="center"><img src ="/English/6b_plots_3D/gifs/MoveCamera2.gif" /></p>
 
 ```python3
-#----------- Funciones parametricas
+#----------- Parametric functions
 
 
 class ParametricCurve1(ThreeDScene):
