@@ -7,7 +7,7 @@
 0. Installation on [Windows](https://www.youtube.com/watch?v=ZltiKHFWmv8), [GNU/Linux](https://www.youtube.com/watch?v=z_WJaHYH66M) and [Mac](https://www.youtube.com/watch?v=uZj_GQc6pN4).
 1. [Text format](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/1_text_formats/scenes.md)/[Part 1 - Youtube](https://www.youtube.com/watch?v=yI2YJff9SgI)/[Part 2 - YouTube](https://www.youtube.com/watch?v=Km09KYWb9ag)/[Part 3 - YouTube](https://www.youtube.com/watch?v=gIvQsqXy5os)
 2. Tex formulas/[YouTube](https://www.youtube.com/watch?v=DGSj7weT-y8)
-3. [Text like arrays and basic animations](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/3_text_like_arrays/scenes.md)/[YouTube](https://www.youtube.com/watch?v=QEdVn8socC8)
+3. [Text like arrays](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/3_text_like_arrays/scenes.md)/[YouTube](https://www.youtube.com/watch?v=QEdVn8socC8)
 4. [Transformations](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/4_transform/scenes.md)/[Part 1 - YouTube](https://www.youtube.com/watch?v=HKPm8FZYaqI)/[Part 2 - YouTube](https://www.youtube.com/watch?v=qfifBmYTEfA)
 5. [Visual tools](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/5_visual_tools/scenes.md)/[YouTube](false_link)
 6. [Introduction in 2D plot](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/6a_plots_2D/scenes.md)/YouTube
