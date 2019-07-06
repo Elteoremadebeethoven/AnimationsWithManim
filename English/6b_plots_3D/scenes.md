@@ -1,5 +1,5 @@
 # Configuration
-We have to add this line:
+We have to add this method:
 
 ```python3
     def get_axis(self, min_val, max_val, axis_config):
@@ -10,8 +10,7 @@ We have to add this line:
         ])
         return NumberLine(**new_config)
 ```
-
-in manimlib/mobject/coordinate_systems.py
+in Axes class: manimlib/mobject/coordinate_systems.py
 
 Use: 
 ```self.set_camera_orientation(phi,theta,distance,gamma)```
