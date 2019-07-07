@@ -1,6 +1,6 @@
 # Enable `submobject_mode` in the most recent version of Manim (jun/21)
 
-## And add this parameters to Animation CONFIG:
+## Open manimlib/animation/animation.py and add this parameters to Animation CONFIG:
 
 ```python3
         "submobject_mode": "None",
