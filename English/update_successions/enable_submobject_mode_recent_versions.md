@@ -1,5 +1,12 @@
 # Enable `submobject_mode` in the most recent version of Manim (jun/21)
 
+## And add this parameters to Animation CONFIG:
+
+```python3
+        "submobject_mode": "None",
+        "lag_factor": 2,
+```
+
 ## Replace `get_sub_alpha`.
 
 The [original code](https://github.com/3b1b/manim/blob/41792fdb5f9578c7e49455e19416b8474f29f2a8/manimlib/animation/animation.py#L130) is ([version of jun/21](https://github.com/3b1b/manim/tree/41792fdb5f9578c7e49455e19416b8474f29f2a8)):
@@ -41,11 +48,4 @@ Replace with:
         elif self.submobject_mode == "all_at_once":
             return alpha
         return np.clip((value - lower), 0, 1)
-```
-
-## And add this parameters to Animation CONFIG:
-
-```python3
-        "submobject_mode": "None",
-        "lag_factor": 2,
 ```
