@@ -1,4 +1,4 @@
-# Enable `submobject_mode `in the most recent version of Manim (jun/21)
+# Enable `submobject_mode` in the most recent version of Manim (jun/21)
 
 ## Replace `get_sub_alpha`.
 
