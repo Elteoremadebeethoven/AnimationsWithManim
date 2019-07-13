@@ -1,0 +1,2 @@
+# Manim FAQs
+
