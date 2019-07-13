@@ -1,4 +1,4 @@
-# Manim FAQs
+# Manim FAQs ([code](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/extra/faqs/faqs.py))
 ## What is CONFIG
 <p align="center"><img src ="/English/extra/faqs/gifs/WhatIsCONFIG.gif" width="800" /></p>
 
