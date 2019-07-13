@@ -55,7 +55,7 @@ class RemoveBackgroundStrokeWidth(ChangeBackgroundColor):
 # background_stroke_width=0 in the SingleStringTexMobject class.
 # -----------------------------------------------------------------
 # Arrange multiple objects
-class ArrangeObjects1(Scene):
+class ArrangeObjects(Scene):
     def construct(self):
         text1 = TextMobject("You have")
         text2 = TextMobject("to use")
