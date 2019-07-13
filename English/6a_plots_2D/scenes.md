@@ -1,4 +1,4 @@
-# Funcions
+# Function `Range`
 We define a function named Range:
 ```python3
 def Range(in_val,end_val,step=1):
