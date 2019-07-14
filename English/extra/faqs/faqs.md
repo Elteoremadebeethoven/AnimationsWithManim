@@ -145,7 +145,7 @@ class ChangePositionAndSizeCamera(MovingCameraScene):
         self.wait()
 ```
 
-## Change position and position of the camera of another scenes
+## Change position and size of the camera of another scenes
 <p align="center"><img src ="/English/extra/faqs/gifs/ChangePositionAndSizeCameraInAnotherScene.gif" width="800" /></p>
 
 ```python3
