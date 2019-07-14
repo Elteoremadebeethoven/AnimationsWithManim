@@ -105,7 +105,7 @@ class ArrangeObjects(Scene):
         self.wait()
 ```
 
-## Change position and position of the camera
+## Change position and size of the camera
 <p align="center"><img src ="/English/extra/faqs/gifs/ChangePositionAndSizeCamera.gif" width="800" /></p>
 
 ```python3
