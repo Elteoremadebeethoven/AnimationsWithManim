@@ -48,6 +48,12 @@ brew install sox
 ```
 #### More packages
 ```sh
+brew install cairo
+```
+
+If that does not works use:
+
+```sh
 brew install cairo --use-clang
 ```
 
