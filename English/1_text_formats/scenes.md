@@ -283,6 +283,6 @@ class TextFonts(Scene):
         textSL.next_to(textBold,DOWN,buff=.5)
         textSC.next_to(textSL,DOWN,buff=.5)
         self.add(textNormal,textItalic,textTypewriter,textBold,textSL,textSC)
-self.wait(3)
+        self.wait(3)
 ```
 <p align="center"><img src ="/English/1_text_formats/gifs/TextFonts.gif" /></p>
