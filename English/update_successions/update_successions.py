@@ -219,19 +219,17 @@ class UpdateFunctionWithAlphaFail(Scene):
 
 class RatePerSecond(Scene):
 	def construct(self):
-		frame_rate = self.camera.frame_rate
-		rate_per_second=1/frame_rate
 		number_line = NumberLine(x_min=-1,x_max=1)
 		triangle = RegularPolygon(3,start_angle=-PI/2)\
 		           .scale(0.2)\
 		           .next_to(number_line.get_left(),UP,buff=SMALL_BUFF)
 		def update_t(triangle,dt):
-			triangle.shift(RIGHT*rate_per_second)
+			triangle.shift(RIGHT*dt)
 
 		self.add(number_line,triangle)
 
 		self.wait(0.3)
-		triangle.shift(LEFT*rate_per_second*2)
+		triangle.shift(LEFT)
 		triangle.add_updater(update_t)
 
 		# The animation begins
@@ -251,16 +249,14 @@ class UpdateFunctionWithAlpha(Scene):
     }
  
     def construct(self):
-        frame_rate = self.camera.frame_rate
-        rate_per_second=1/frame_rate
-        real_rate=self.rate*rate_per_second
         def update_curve(c, dt):
+            rate=self.rate*dt
             other_mob = FunctionGraph(
-                lambda x: self.amp*np.sin((x - (self.t_offset + real_rate)+real_rate*2)),
+                lambda x: self.amp*np.sin((x - (self.t_offset + rate))),
                     x_min=0,x_max=self.x_max
                 ).shift(LEFT*self.x_min)
             c.become(other_mob)
-            self.t_offset += real_rate
+            self.t_offset += rate
 
        
         c = FunctionGraph(
