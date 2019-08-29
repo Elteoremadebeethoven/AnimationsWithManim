@@ -16,6 +16,10 @@
 9. [Update functions](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/update_successions/update_successions.py)/YouTube
 10. First project/YouTube
 
+Challenges:
+* [Roulette Epicycloids](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/extra/manim_challenges/roulette_epicycloids.py)
+* [M mod N Epicycloids](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/extra/manim_challenges/MmodN_epicycloids.py)
+
 Settings:
 * [Leave progress bars by default.](https://www.youtube.com/watch?v=K8dVFqXR2JM)
 * [Rendering settings.](https://www.youtube.com/watch?v=d_2V5mC2hx0)
