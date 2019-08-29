@@ -1,4 +1,59 @@
-from manimlib.imports import *
+old_version = True
+
+if old_version:
+    from big_ol_pile_of_manim_imports import *
+else:
+    from manimlib.imports import *
+
+class EpicycloidSceneSimple(Scene):
+    def construct(self):
+       radius1 = 2.4
+       radius2 = radius1/3
+       self.epy(radius1,radius2)
+
+    def epy(self,r1,r2):
+        # Manim circle
+        c1 = Circle(radius=r1,color=BLUE)
+        # Small circle
+        c2 = Circle(radius=r2,color=PURPLE).rotate(PI)
+        c2.next_to(c1,RIGHT,buff=0)
+        c2.start = c2.copy()
+        # Dot
+        dot = Dot(c2.point_from_proportion(0),color=YELLOW)
+        # Line
+        line = Line(c2.get_center(),dot.get_center()).set_stroke(BLACK,2.5)
+        # Path
+        path = VMobject(color=RED)
+        path.set_points_as_corners([dot.get_center(),dot.get_center()+UP*0.001])
+        # Path group
+        path_group = VGroup(line,dot,path)
+        
+        self.play(ShowCreation(line),ShowCreation(c1),ShowCreation(c2),GrowFromCenter(dot))
+
+        # update function of path_group
+        def update_group(group):
+            l,mob,previus_path = group
+            mob.move_to(c2.point_from_proportion(0))
+            old_path = path.copy()
+            old_path.append_vectorized_mobject(Line(old_path.points[-1],dot.get_center()))
+            old_path.make_smooth()
+            l.put_start_and_end_on(c2.get_center(),dot.get_center())
+            path.become(old_path)
+
+        # update function of small circle
+        def update_c2(c,alpha):
+            c.become(c.start)
+            c.rotate(TAU*alpha,about_point=c1.get_center())
+            c.rotate(TAU*(r1/r2)*alpha,about_point=c.get_center())
+
+        path_group.add_updater(update_group)
+        self.add(path_group)
+        
+        self.play(
+                UpdateFromAlphaFunc(c2,update_c2,rate_func=linear,run_time=6)
+                )
+        self.wait()
+
 
 class EpicycloidSceneComplete(Scene):
     CONFIG = {
@@ -103,53 +158,3 @@ class EpicycloidSceneComplete(Scene):
         self.wait()
         self.dot = dot
         self.play(FadeOut(path),FadeOut(c2),FadeOut(line))
-
-
-class EpicycloidSceneSimple(Scene):
-    def construct(self):
-       radius1 = 2.4
-       radius2 = radius1/3
-       self.epy(radius1,radius2)
-
-    def epy(self,r1,r2):
-        # Manim circle
-        c1 = Circle(radius=r1,color=BLUE)
-        # Small circle
-        c2 = Circle(radius=r2,color=PURPLE).rotate(PI)
-        c2.next_to(c1,RIGHT,buff=0)
-        c2.start = c2.copy()
-        # Dot
-        dot = Dot(c2.point_from_proportion(0),color=YELLOW)
-        # Line
-        line = Line(c2.get_center(),dot.get_center()).set_stroke(BLACK,2.5)
-        # Path
-        path = VMobject(color=RED)
-        path.set_points_as_corners([dot.get_center(),dot.get_center()+UP*0.001])
-        # Path group
-        path_group = VGroup(line,dot,path)
-        
-        self.play(ShowCreation(line),ShowCreation(c1),ShowCreation(c2),GrowFromCenter(dot))
-
-        # update function of path_group
-        def update_group(group):
-            l,mob,previus_path = group
-            mob.move_to(c2.point_from_proportion(0))
-            old_path = path.copy()
-            old_path.append_vectorized_mobject(Line(old_path.points[-1],dot.get_center()))
-            old_path.make_smooth()
-            l.put_start_and_end_on(c2.get_center(),dot.get_center())
-            path.become(old_path)
-
-        # update function of small circle
-        def update_c2(c,alpha):
-            c.become(c.start)
-            c.rotate(TAU*alpha,about_point=c1.get_center())
-            c.rotate(TAU*(r1/r2)*alpha,about_point=c.get_center())
-
-        path_group.add_updater(update_group)
-        self.add(path_group)
-        
-        self.play(
-                UpdateFromAlphaFunc(c2,update_c2,rate_func=linear,run_time=6)
-                )
-        self.wait()
