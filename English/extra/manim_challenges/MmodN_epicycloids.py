@@ -13,12 +13,10 @@ class SimpleMmodN(Scene):
     def get_m_mod_n_objects(self,x,y):
         circle = Circle().set_height(FRAME_HEIGHT)
         circle.scale(0.85)
-        coords = []
-        partitions = 1/y
         lines = VGroup()
         for i in range(y):
-            start_point = circle.point_from_proportion((i%y)*partitions)
-            end_point = circle.point_from_proportion(((i*x)%y)*partitions)
+            start_point = circle.point_from_proportion((i%y)/y)
+            end_point = circle.point_from_proportion(((i*x)%y)/y)
             line = Line(start_point,end_point).set_stroke(width=1)
             lines.add(line)
         return [circle,lines]
