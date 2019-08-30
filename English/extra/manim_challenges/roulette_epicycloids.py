@@ -27,7 +27,7 @@ class EpicycloidSceneSimple(Scene):
         # Path
         path = VMobject(color=RED)
         # Path can't have the same coord twice, so we have to dummy point
-        path.set_points_as_corners([dot.get_center(),dot.get_center()+UP*0.001])
+        path.set_points_as_corners([dot.get_center(),mob.get_center()+UP*0.001])
         # Path group
         path_group = VGroup(line,dot,path)
         # Alpha, from 0 to 1:
