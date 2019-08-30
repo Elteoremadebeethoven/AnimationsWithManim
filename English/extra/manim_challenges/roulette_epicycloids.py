@@ -62,7 +62,7 @@ class EpicycloidSceneSimple(Scene):
                 )
         self.wait(2)
         c2.clear_updaters()
-        path_group.clear_updaters(update_group)
+        path_group.clear_updaters()
         self.play(FadeOut(VGroup(c1,c2,path_group)))
 
 
@@ -172,7 +172,7 @@ class EpicycloidSceneComplete(Scene):
                 )
         self.wait()
         c2.clear_updaters()
-        path_group.clear_updaters(update_group)
+        path_group.clear_updaters()
         self.dot = dot
         self.play(FadeOut(path),FadeOut(c2),FadeOut(line))
 
