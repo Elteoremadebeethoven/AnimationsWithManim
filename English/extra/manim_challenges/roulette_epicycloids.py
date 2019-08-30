@@ -19,11 +19,14 @@ class EpicycloidSceneSimple(Scene):
         c2.next_to(c1,RIGHT,buff=0)
         c2.start = c2.copy()
         # Dot
+        # .points[0] return the start path coordinate
+        # .points[-1] return the end path coordinate
         dot = Dot(c2.points[0],color=RED)
         # Line
         line = Line(c2.get_center(),dot.get_center()).set_stroke(BLACK,2.5)
         # Path
         path = VMobject(color=RED)
+        # Path can't have the same coord twice, so we have to dummy point
         path.set_points_as_corners([dot.get_center(),dot.get_center()+UP*0.001])
         # Path group
         path_group = VGroup(line,dot,path)
@@ -37,6 +40,7 @@ class EpicycloidSceneSimple(Scene):
             l,mob,previus_path = group
             mob.move_to(c2.points[0])
             old_path = path.copy()
+            # See manimlib/mobject/types/vectorized_mobject.py
             old_path.append_vectorized_mobject(Line(old_path.points[-1],mob.get_center()))
             old_path.make_smooth()
             l.put_start_and_end_on(c2.get_center(),dot.get_center())
