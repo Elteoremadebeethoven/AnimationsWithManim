@@ -27,7 +27,7 @@ class EpicycloidSceneSimple(Scene):
         # Path
         path = VMobject(color=RED)
         # Path can't have the same coord twice, so we have to dummy point
-        path.set_points_as_corners([dot.get_center(),mob.get_center()+UP*0.001])
+        path.set_points_as_corners([dot.get_center(),dot.get_center()+UP*0.001])
         # Path group
         path_group = VGroup(line,dot,path)
         # Alpha, from 0 to 1:
@@ -43,7 +43,7 @@ class EpicycloidSceneSimple(Scene):
             # See manimlib/mobject/types/vectorized_mobject.py
             old_path.append_vectorized_mobject(Line(old_path.points[-1],mob.get_center()))
             old_path.make_smooth()
-            l.put_start_and_end_on(c2.get_center(),dot.get_center())
+            l.put_start_and_end_on(c2.get_center(),mob.get_center())
             path.become(old_path)
 
         # update function of small circle
