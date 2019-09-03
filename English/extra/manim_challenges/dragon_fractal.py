@@ -36,7 +36,6 @@ class Dragon(MovingCameraScene):
 
     def get_all_paths(self,path,iterations):
         target_path = path.copy()
-        fractal = []
         points = []
         for _ in range(iterations):
             new_path = target_path.copy()
