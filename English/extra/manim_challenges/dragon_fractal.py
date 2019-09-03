@@ -1,3 +1,10 @@
+old_version = True
+
+if old_version:
+    from big_ol_pile_of_manim_imports import *
+else:
+    from manimlib.imports import *
+
 class Dragon(MovingCameraScene):
     CONFIG = {
         "iterations":10,
