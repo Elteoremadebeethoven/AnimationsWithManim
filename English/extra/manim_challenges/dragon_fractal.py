@@ -44,7 +44,6 @@ class Dragon(MovingCameraScene):
             new_path.rotate(
                         PI/2, 
                         about_point=target_path[-1].points[point],
-                        about_edge=target_path[-1].points[point]
                     )
             post_path = reversed([*new_path])
             target_path.add(*post_path)
