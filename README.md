@@ -19,6 +19,7 @@
 Challenges:
 * [Roulette Epicycloids](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/extra/manim_challenges/roulette_epicycloids.py)
 * [M mod N Epicycloids](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/extra/manim_challenges/MmodN_epicycloids.py)
+* [Dragon fractal](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/extra/manim_challenges/dragon_fractal.py)
 
 Settings:
 * [Leave progress bars by default.](https://www.youtube.com/watch?v=K8dVFqXR2JM)
