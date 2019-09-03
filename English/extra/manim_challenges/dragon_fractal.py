@@ -17,7 +17,7 @@ class Dragon(MovingCameraScene):
     def construct(self):
         self.color = it.cycle(self.colors)
         path = VGroup()
-        first_line = Line(ORIGIN,UP / 5,color = next(self.color))
+        first_line = Line(ORIGIN, UP / 5, color = next(self.color))
         path.add(first_line)
 
         self.camera_frame.set_height(first_line.get_height() * self.border_proportion)
