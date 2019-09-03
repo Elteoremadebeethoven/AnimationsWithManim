@@ -33,6 +33,10 @@ Extras:
 * [How to create your own Number Creature.](https://www.youtube.com/watch?v=KGdA8IB6JL0)
 * [FAQs](https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/extra/faqs/faqs.md)
 
+Support this work in:
+* [Patreon](https://patreon.com/theoremofbeethoven)
+* [PayPal](https://www.paypal.me/zavdn)
+
 ## What is Manim?
 [Manim](https://github.com/3b1b/manim) is a free tool for Python created by [Grant Sanderson](http://www.3blue1brown.com/) ([twitter](https://twitter.com/3blue1brown?lang=es)), matematician from Stantford and owner of the channel of YouTube [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw). It is specialized in scientific subjects, mainly mathematical, so it is based on LaTeX commands (mainly in TeX).
 
