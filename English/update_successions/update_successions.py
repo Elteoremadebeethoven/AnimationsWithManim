@@ -260,38 +260,20 @@ class UpdateFunctionWithDt2(Scene):
         self.play(FadeOut(text))
         self.wait()
 
-class RatePerSecond(Scene):
-    def construct(self):
-        number_line = NumberLine(x_min=-1,x_max=1)
-        triangle = RegularPolygon(3,start_angle=-PI/2)\
-                   .scale(0.2)\
-                   .next_to(number_line.get_left(),UP,buff=SMALL_BUFF)
-        def update_t(triangle,dt):
-            triangle.shift(RIGHT*dt)
-
-        self.add(number_line,triangle)
-
-        self.wait(0.3)
-        triangle.shift(LEFT)
-        triangle.add_updater(update_t)
-
-        # The animation begins
-        self.wait(2)
-
-        triangle.clear_updaters()
-        self.wait()
-
 class UpdateCurve(Scene):
     def construct(self):
-        c = FunctionGraph(lambda x: 2*np.exp(-2*(x-1)**2))
-        axes=Axes(y_min=-3,y_max=3)
+        def f(dx=1):
+            return FunctionGraph(lambda x: 2*np.exp(-2 * (x - dx) ** 2))
+
+        c = f()
+        axes=Axes(y_min=-3, y_max=3)
  
-        def update_curve(c, dt):
-            alpha=interpolate(1,4,dt)
-            c_c = FunctionGraph(lambda x: 2*np.exp(-2*(x-alpha)**2))
+        def update_curve(c, alpha):
+            dx = interpolate(1, 4, alpha)
+            c_c = f(dx)
             c.become(c_c)
  
-        self.play(ShowCreation(axes),ShowCreation(c))
+        self.play(ShowCreation(axes), ShowCreation(c))
         self.wait()
         self.play(UpdateFromAlphaFunc(c,update_curve),rate_func=there_and_back,run_time=4)
         self.wait()
