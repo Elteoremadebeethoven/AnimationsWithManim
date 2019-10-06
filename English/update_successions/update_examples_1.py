@@ -182,6 +182,9 @@ class EpicycloidScene(Scene):
         c2.clear_updaters()
         path_group.clear_updaters()
         self.play(FadeOut(VGroup(c1,c2,path_group)))
+        
+# The calculations were based on the book of:
+# Design Of Machinery - Robert Norton 4th Edition - Chapter 4 - Position Analysis
 
 class SliderCrankMechanism(Scene):
     CONFIG={
