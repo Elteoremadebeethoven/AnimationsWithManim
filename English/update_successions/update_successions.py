@@ -180,41 +180,84 @@ class UpdateValueTracker2(Scene):
         # self.play(theta.set_value,self.final_theta)
 
         self.wait()
+        
+# dt = 1 / fps
 
-class UpdateFunctionWithAlphaFail(Scene):
+class UpdateFunctionWithDt1(Scene):
     CONFIG={
-    "amp":2.3,
-    "t_offset":0,
-    "rate":0.1,
-    "x_min":TAU/2,
-    "x_max":TAU,
-    "wait_time":15,
+        "amp": 2.3,
+        "t_offset": 0,
+        "rate": TAU/4,
+        "sine_graph_config":{
+            "x_min": -TAU/2,
+            "x_max": TAU/2,
+            "color": RED,
+            },
+        "wait_time":15,
     }
  
     def construct(self):
+
         def update_curve(c, dt):
-            other_mob = FunctionGraph(
-                lambda x: self.amp*np.sin((x - (self.t_offset + self.rate))),
-                    x_min=0,x_max=self.x_max
-                ).shift(LEFT*self.x_min)
-            c.become(other_mob)
-            self.t_offset += self.rate
+            rate = self.rate * dt
+            c.become(self.get_sin_graph(self.t_offset + rate))
+            # Every frame, the t_offset increase rate / fps
+            self.t_offset += rate
 
        
-        c = FunctionGraph(
-            lambda x: self.amp*np.sin((x)),
-            x_min=0,x_max=self.x_max
-            ).shift(LEFT*self.x_min)
+        c = self.get_sin_graph(0)
 
         self.play(ShowCreation(c))
+        print(f"fps: {self.camera.frame_rate}")
+        print(f"dt: {1 / self.camera.frame_rate}")
+        print(f"rate: {self.rate / self.camera.frame_rate}")
+        print(f"cy_start: {c.points[0][1]}")
+        print(f"cy_end:   {c.points[-1][1]}")
+        print(f"t_offset: {self.t_offset}\n")
 
         c.add_updater(update_curve)
         self.add(c)
 
-        self.wait(3)
+        # The animation begins
+        self.wait(4)
         
         c.remove_updater(update_curve)
- 
+        self.wait()
+
+        print(f"cy_start:  {c.points[0][1]}")
+        print(f"cy_end:    {c.points[-1][1]}")
+        print(f"t_offset: {self.t_offset}\n")
+
+    def get_sin_graph(self, dx):
+        c = FunctionGraph(
+                lambda x: self.amp * np.sin(x - dx),
+                **self.sine_graph_config
+                )
+        return c
+
+class UpdateFunctionWithDt2(Scene):
+    def construct(self):
+        #Se objects
+        self.t_offset=0
+        orbit=Ellipse(color=GREEN).scale(2.5)
+        planet=Dot()
+        text=TextMobject("Update function")
+
+        planet.move_to(orbit.point_from_proportion(0))
+
+        def update_planet(mob,dt):
+            rate=dt*0.3
+            mob.move_to(orbit.point_from_proportion((self.t_offset + rate)%1))
+            self.t_offset += rate
+
+        planet.add_updater(update_planet)
+        self.add(orbit,planet)
+        self.wait(4)
+        self.play(Write(text))
+        self.wait(4)
+        planet.clear_updaters()
+        self.wait(2)
+        self.play(FadeOut(text))
         self.wait()
 
 class RatePerSecond(Scene):
@@ -238,56 +281,14 @@ class RatePerSecond(Scene):
         triangle.clear_updaters()
         self.wait()
 
-class UpdateFunctionWithAlpha(Scene):
-    CONFIG={
-    "amp":2.3,
-    "t_offset":0,
-    "rate":TAU/4,
-    "x_min":TAU/2,
-    "x_max":TAU,
-    "wait_time":15,
-    }
- 
-    def construct(self):
-        def update_curve(c, dt):
-            rate=self.rate*dt
-            other_mob = FunctionGraph(
-                lambda x: self.amp*np.sin((x - (self.t_offset + rate))),
-                    x_min=0,x_max=self.x_max
-                ).shift(LEFT*self.x_min)
-            c.become(other_mob)
-            self.t_offset += rate
-
-       
-        c = FunctionGraph(
-            lambda x: self.amp*np.sin((x)),
-            x_min=0,x_max=self.x_max
-            ).shift(LEFT*self.x_min)
-
-        self.play(ShowCreation(c))
-
-        print("coord_x_in:",c.points[0][1])
-
-        c.add_updater(update_curve)
-        self.add(c)
-
-        # The animation begins
-        self.wait(4)
-        
-        c.remove_updater(update_curve)
-        self.wait()
-
-        print("coord_x_end:",c.points[0][1])
-
 class UpdateCurve(Scene):
     def construct(self):
-        a=1
-        c = FunctionGraph(lambda x: 2*np.exp(-2*(x-a*1)**2))
+        c = FunctionGraph(lambda x: 2*np.exp(-2*(x-1)**2))
         axes=Axes(y_min=-3,y_max=3)
  
         def update_curve(c, dt):
             alpha=interpolate(1,4,dt)
-            c_c = FunctionGraph(lambda x: 2*np.exp(-2*(x-a*alpha)**2))
+            c_c = FunctionGraph(lambda x: 2*np.exp(-2*(x-alpha)**2))
             c.become(c_c)
  
         self.play(ShowCreation(axes),ShowCreation(c))
