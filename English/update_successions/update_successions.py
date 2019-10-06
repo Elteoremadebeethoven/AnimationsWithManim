@@ -277,6 +277,31 @@ class UpdateCurve(Scene):
         self.wait()
         self.play(UpdateFromAlphaFunc(c,update_curve),rate_func=there_and_back,run_time=4)
         self.wait()
+        
+class InterpolateColorScene(Scene):
+    def construct(self):
+        shape = Square(fill_opacity=1).scale(2)
+        shape.set_color(RED)
+
+        def update_color(mob,alpha):
+            dcolor = interpolate(0,mob.alpha_color,alpha)
+            mob.set_color(self.interpolate_color_mob(mob.initial_state,shape.new_color,dcolor))
+
+        self.add(shape)
+        self.change_init_values(shape,TEAL,0.5)
+        self.play(UpdateFromAlphaFunc(shape,update_color))
+
+        self.change_init_values(shape,PINK,0.9)
+        self.play(UpdateFromAlphaFunc(shape,update_color))
+        self.wait()
+
+    def interpolate_color_mob(self,mob,color,alpha):
+        return interpolate_color(mob.get_color(),color,alpha)
+
+    def change_init_values(self,mob,color,alpha):
+        mob.initial_state = mob.copy()
+        mob.new_color = color
+        mob.alpha_color = alpha
 
 class SuccessionExample1Fail(Scene):
     def construct(self):
