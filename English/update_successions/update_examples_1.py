@@ -212,7 +212,7 @@ class SliderCrankMechanism(Scene):
         radio = 0.08
 
         base_down=Line(LEFT*4,RIGHT*4)
-        base_down[0:-1].shift(0.1*DOWN)
+        base_down.shift(0.1*DOWN)
         anchor_point = Dot(O2.get_center(),radius=radio)
         semi_circle_anchor = Dot(O2.get_center(),radius=0.2,color=self.anchor_color)
         anchor_rect = Square(side_length=0.4).set_stroke(None,0).set_fill(self.anchor_color,1).move_to(O2.get_center()+DOWN*semi_circle_anchor.get_width()/2)
