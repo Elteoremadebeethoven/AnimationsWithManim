@@ -18,7 +18,7 @@ class TangentVector(Scene):
                     self.get_tangent_vector(alpha.get_value()%1,figure,scale=2)
                 )
             )
-        self.add(dot)
+        self.add(vector,dot)
         self.play(alpha.increment_value, 2, run_time=8, rate_func=linear)
         self.wait()
 
