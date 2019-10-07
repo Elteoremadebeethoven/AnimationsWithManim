@@ -280,8 +280,8 @@ class TriangleScene(Scene):
         
         def triangle_update(mob):
             side_1,side_2 = mob
-            new_side_1 = Line(ORIGIN,circle.get_end(),color=BLUE)
-            new_side_2 = Line(RIGHT*3,circle.get_end(),color=PURPLE)
+            new_side_1 = Line(ORIGIN,circle.points[-1],color=BLUE)
+            new_side_2 = Line(RIGHT*3,circle.points[-1],color=PURPLE)
             side_1.become(new_side_1)
             side_2.become(new_side_2)
 
