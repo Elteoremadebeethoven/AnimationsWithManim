@@ -36,18 +36,16 @@ class ParabolaCreation(GraphScene):
                 parabola_function,
                 x_min = 0,
                 x_max = 5,
-                stroke_width = 3,
                 color = BLUE
-            )
+            ).set_stroke(None,3)
         
 
         parabola_left = self.get_graph(
                 parabola_function,
                 x_min = 0,
                 x_max = -5,
-                stroke_width = 3,
                 color = BLUE
-            )
+            ).set_stroke(None,3)
         anim_kwargs = {"run_time":5,"rate_func":linear}
         self.move_dot_path(parabola_right,anim_kwargs)
         self.move_dot_path(parabola_left,anim_kwargs)
