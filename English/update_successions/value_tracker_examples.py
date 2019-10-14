@@ -131,9 +131,12 @@ class FunctionTrackerWithNumberLine(Scene):
 
         return numer_group
 
+#HSL color, see https://pypi.org/project/colour/
 def HSL(hue,saturation=1,lightness=0.5):
     return Color(hsl=(hue,saturation,lightness))
 
+
+# This function is come and go, but linear
 def double_linear(t):
     if t < 0.5:
         return linear(t*2)
@@ -146,6 +149,7 @@ class ValueTrackerWithColor(Scene):
                                     width=FRAME_WIDTH-1,
                                     height=1,
                                     fill_opacity=1,
+                                    # Gradient direction
                                     sheen_direction=RIGHT,
                                     stroke_width=0
                                     )
