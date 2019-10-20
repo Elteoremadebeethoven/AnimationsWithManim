@@ -2,6 +2,7 @@
 
 ## Contents (updating)
 ### [Tutorial files](https://drive.google.com/open?id=10LYJVJsvkcl5a7q_S-ZlSxI7hEBepw3P)
+### [Documentation](https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/index.html)
 ### This tutorial is based on the manim version of [3 february of 2019](https://github.com/3b1b/manim/tree/3b088b12843b7a4459fe71eba96b70edafb7aa78) 
 
 0. Installation on [Windows](https://www.youtube.com/watch?v=ZltiKHFWmv8), [GNU/Linux](https://www.youtube.com/watch?v=z_WJaHYH66M) and [Mac](https://www.youtube.com/watch?v=uZj_GQc6pN4).
