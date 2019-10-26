@@ -1,5 +1,5 @@
 # How to create paths in Manim with set of points
-# Some useful functions:
+## Some useful functions:
 ```python
 def coord(x,y,z=0):
     return np.array([x,y,z])
@@ -11,7 +11,7 @@ def getY(mob):
     return mob.get_center()[1]
 ```
 
-# Abstract class
+## Abstract class
 This class is not a scene, it is the basis for creating our scenes.
 ```python
 # Abstract class:
@@ -65,7 +65,7 @@ class PathScene(Scene):
         return dots,labels,numbers
 ```
 
-# Show Points
+## Show Points
 ```python
 class ShowPoints(PathScene):
     pass
@@ -73,7 +73,7 @@ class ShowPoints(PathScene):
 
 <p align="center"><img src ="/English/extra/faqs/gifs/ShowPoints.png" width="800" /></p>
 
-# Path as corners
+## Path as corners
 ```python
 class PathAsCorners(PathScene):
     def construct(self):
@@ -84,7 +84,7 @@ class PathAsCorners(PathScene):
 
 <p align="center"><img src ="/English/extra/faqs/gifs/PathAsCorners.png" width="800" /></p>
 
-# Path smoothly
+## Path smoothly
 ```python
 class PathSmoothly(PathScene):
     def construct(self):
@@ -95,7 +95,7 @@ class PathSmoothly(PathScene):
 
 <p align="center"><img src ="/English/extra/faqs/gifs/PathSmoothly.png" width="800" /></p>
 
-# Bezier points of a path
+## Bezier points of a path
 ```python
 class PathBezierPoints(PathScene):
     def construct(self):
@@ -107,7 +107,7 @@ class PathBezierPoints(PathScene):
 
 <p align="center"><img src ="/English/extra/faqs/gifs/PathBezierPoints.png" width="800" /></p>
 
-# Append points
+## Append points
 ```python
 class AppendPoints(PathScene):
     def construct(self):
@@ -141,7 +141,7 @@ class AppendPoints(PathScene):
 
 <p align="center"><img src ="/English/extra/faqs/gifs/AppendPoints.gif" width="800" /></p>
 
-# Change path style
+## Change path style
 ```python
 class TransformPathStyle(PathScene):
     def construct(self):
