@@ -52,7 +52,6 @@ class PathScene(Scene):
         return labels
 
     def get_dot_numbers(self,dots):
-        dots = self.get_dots(self.tuples)
         numbers = VGroup(*[
             TextMobject(f"{n}",height=0.2).next_to(dot,DOWN,buff=SMALL_BUFF)
             for n,dot in zip(range(1,len(dots)+1),dots)
