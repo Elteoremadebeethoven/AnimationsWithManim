@@ -1,5 +1,5 @@
 # __**WARNING**__
-**Before writing an issue, please check the following links if someone has already resolved your question in the following links. If you are asking things that have already been resolved I will have no choice but to close your issue.**
+**Before writing an issue, please check the following links if someone has already resolved your question. If you are asking things that have already been resolved I will have no choice but to close your issue.**
 
 * [Manim issues](https://github.com/3b1b/manim/issues?q=is%3Aissue+is%3Aclosed)
 * [Stackoverflow](https://stackoverflow.com/questions/tagged/manim)
