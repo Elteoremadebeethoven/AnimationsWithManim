@@ -37,18 +37,13 @@ The code is `TexMobject` write `TeX`.
 My code is:
 
 \`\`\`python
-class OpeningManimExample(Scene):
-    def construct(self):
-        title = TextMobject("This is some \LaTeX")
-        basel = TexMobject(
-            "\sum_{n=1}^\infty "
-            "\frac{1}{n^2} = \frac{\pi^2}{6}"
-        )
-        VGroup(title, basel).arrange(DOWN)
-        self.play(
-            Write(title),
-            FadeInFrom(basel, UP),
-        )
+
+Here is
+
+a multiline
+
+code
+
 \`\`\`
 
 **OUTPUT**
@@ -56,18 +51,11 @@ class OpeningManimExample(Scene):
 My code is:
 
 ```python
-class OpeningManimExample(Scene):
-    def construct(self):
-        title = TextMobject("This is some \LaTeX")
-        basel = TexMobject(
-            "\sum_{n=1}^\infty "
-            "\frac{1}{n^2} = \frac{\pi^2}{6}"
-        )
-        VGroup(title, basel).arrange(DOWN)
-        self.play(
-            Write(title),
-            FadeInFrom(basel, UP),
-        )
+Here is
+
+a multiline
+
+code
 ```
 
 **[LEARN MORE HERE](https://guides.github.com/features/mastering-markdown/#what)**
