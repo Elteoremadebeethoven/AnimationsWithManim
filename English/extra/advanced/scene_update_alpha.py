@@ -1,6 +1,11 @@
 from manimlib.imports import *
 from check_svg import *
 from screen_grid import ScreenGrid
+"""
+You have to add
+\usepackage{listings}
+in your tex_template.tex file
+"""
 
 code_string = r"""\begin{lstlisting}[language=Python,basicstyle=\scriptsize\ttfamily]
 square2.save_state()
