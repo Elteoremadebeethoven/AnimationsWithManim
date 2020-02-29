@@ -125,6 +125,7 @@ class ChangingElectricField(Scene):
     CONFIG = {
         "vector_field_config": {},
         "num_particles": 6,
+        "anim_time": 5,
     }
     def construct(self):
         particles = self.get_particles()
@@ -151,15 +152,15 @@ class ChangingElectricField(Scene):
             particles
         )
         # Animation time:
-        self.wait(1)
-        # # Suspend animation
-        # for mob in vector_field,particles:
-        #     mob.suspend_updating()
-        # self.wait()
-        # # Restore animation
-        # for mob in vector_field,particles:
-        #     mob.resume_updating()
-        # self.wait(3)
+        self.wait(self.anim_time)
+        # Suspend animation
+        for mob in vector_field,particles:
+            mob.suspend_updating()
+        self.wait()
+        # Restore animation
+        for mob in vector_field,particles:
+            mob.resume_updating()
+        self.wait(3)
 
 
     def get_particles(self):
