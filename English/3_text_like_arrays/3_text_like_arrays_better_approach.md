@@ -44,4 +44,4 @@ class colorBetterApproach1(Scene):
         self.wait()
 ```
 
-<p align="center"><img src ="/English/3_text_like_arrays/gifs/better.gif" /></p>
+<p align="center"><img src ="/English/3_text_like_arrays/gifs/text_like_arrays_better_approach.gif" /></p>
