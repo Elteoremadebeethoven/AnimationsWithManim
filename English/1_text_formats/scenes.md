@@ -2,6 +2,7 @@
 Remember: You have to add this line to include all packages of manim.
 ```python3
 from big_ol_pile_of_manim_imports import *
+from  manimlib.imports import
 ```
 In the first line.
 
