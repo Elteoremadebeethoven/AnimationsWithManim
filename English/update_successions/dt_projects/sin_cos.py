@@ -1,7 +1,5 @@
 from manimlib.imports import *
 
-set_custom_quality(1080, 5)
-
 class SinFunc(FunctionGraph):
     CONFIG = {
         "color": BLUE_E,
