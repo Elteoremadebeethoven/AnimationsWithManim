@@ -84,7 +84,7 @@ python3 -m pip install pydub
 ```
 
 #### Download the rest
-Download the [requirements of the most recent version](https://github.com/3b1b/manim/blob/master/requirements.txt) and use:
+Open `requirements.txt` and replace the content with [this](https://github.com/3b1b/manim/blob/master/requirements.txt) and use:
 
 ```
 python3 -m pip install -r requirements.txt
