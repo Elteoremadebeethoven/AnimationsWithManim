@@ -79,9 +79,15 @@ brew install pkg-config
 Move the terminal to manim-master folder and run this:
 
 ```sh
-python3 -m pip install -r requirements.txt
 python3 -m pip install pyreadline
 python3 -m pip install pydub
+```
+
+#### Download the rest
+Download the [requirements of the most recent version](https://github.com/3b1b/manim/blob/master/requirements.txt) and use:
+
+```
+python3 -m pip install -r requirements.txt
 ```
 
 <p align="center"><img src ="/English/0_instalation/macOS/gifs/MacP6.gif" /></p>
