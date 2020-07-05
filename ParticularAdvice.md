@@ -35,7 +35,9 @@ To apply for the job, some requirements must be met.
 5. Payment is made via [PayPal](https://www.paypal.me/zavdn).
 
 Contact:
+
 Gmail: theoremofbeethoven@gmail.com
+
 Or Discord: theoremofbeethoven#2781
 
 # Contrátame como freelance
@@ -59,5 +61,7 @@ Para solicitar el trabajo se deben cumplir algunos requisitos.
 5. El pago se realiza via [PayPal](https://www.paypal.me/zavdn).
 
 Contacto: 
+
 Gmail: theoremofbeethoven@gmail.com
-Or Discord: theoremofbeethoven#2781
+
+O Discord: theoremofbeethoven#2781
