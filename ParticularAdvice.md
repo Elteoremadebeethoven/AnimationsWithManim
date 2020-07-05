@@ -44,7 +44,7 @@ Or Discord: theoremofbeethoven#2781
 
 Para solicitar el trabajo se deben cumplir algunos requisitos.
 
-1. Debes de tener muy claro la progresión de tu animación, de preferencia tener bocetos de cómo quieres tener tu animación, paso a paso, con lujo de detalles..
+1. Debes de tener muy claro la progresión de tu animación, de preferencia tener bocetos de cómo la quieres, paso a paso, con lujo de detalles.
 
 2. Los trabajos menores a 100 USD se paga la mitad por adelantado, si supera los 100 USD se paga una tercera parte por adelantado.
 
