@@ -34,6 +34,9 @@ To apply for the job, some requirements must be met.
 
 5. Payment is made via [PayPal](https://www.paypal.me/zavdn).
 
+Contact:
+Gmail: theoremofbeethoven@gmail.com
+Or Discord: theoremofbeethoven#2781
 
 # Contrátame como freelance
 
@@ -52,6 +55,9 @@ Para solicitar el trabajo se deben cumplir algunos requisitos.
   * Si se requieren conocimientos avanzados de Matemáticas, Física u otra ciencia el precio aumenta.
   * Si se desea una clase abstracta (código genérico para crear animaciones) el precio puede hasta triplicarse debido a la modularización del código.
   * El tiempo para realizar el código.
-  
 
 5. El pago se realiza via [PayPal](https://www.paypal.me/zavdn).
+
+Contacto: 
+Gmail: theoremofbeethoven@gmail.com
+Or Discord: theoremofbeethoven#2781
