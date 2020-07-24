@@ -15,7 +15,7 @@ with
 ```python
             x_label = TextMobject(self.x_axis_label,color=self.x_label_color)
             # and
-            y_label = TextMobject(self.x_axis_label,color=self.y_label_color)
+            y_label = TextMobject(self.y_axis_label,color=self.y_label_color)
 ```
 Result:
 
