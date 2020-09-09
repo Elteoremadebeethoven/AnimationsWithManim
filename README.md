@@ -61,23 +61,23 @@ If I built this command TeX return:
 This course is mainly aimed at teachers who want to explain a didactic and graphic form a mathematical development or the resolution of especially complex problems. The course extends to anyone who wants to explain a scientific topic in a original way.
 
 ## I need to know Python 3 and LaTeX to take this tutorials?
-No, is not necesary know smething of programming (although it is preferable for faster learning). In addition to learning Python 3, teX knowledge is required to write the formulas. Likewise will be mencion tools such as [Pencil chromestore](http://s1.daumcdn.net/editor/fp/service_nc/pencil/Pencil_chromestore.html), [Codecogs](https://www.codecogs.com/latex/eqneditor.php), [Rinconmatematico](http://rinconmatematico.com/mathjax/), [latex4technics](https://www.latex4technics.com/), [sciweavers](http://www.sciweavers.org/free-online-latex-equation-editor) in other pages to learn and write formulas in TeX.
+No, it is not necesary to know something of programming (although it is preferable for faster learning). In addition to learning Python3, teX knowledge is required to write the formulas. Likewise will mention tools such as [Pencil chromestore](http://s1.daumcdn.net/editor/fp/service_nc/pencil/Pencil_chromestore.html), [Codecogs](https://www.codecogs.com/latex/eqneditor.php), [Rinconmatematico](http://rinconmatematico.com/mathjax/), [latex4technics](https://www.latex4technics.com/), [sciweavers](http://www.sciweavers.org/free-online-latex-equation-editor) in other pages to learn and write formulas in TeX.
 
 ## I need a modern PC to run Manim?
-No, with 512 MB of RAM and an Intel Core Duo processor (or similar) is more than enough, the difference is the compile time (the fewer resources the longer it will take more time the render).
+No, with 512 MB of RAM and an Intel Core Duo processor (or similar) is more than enough, the difference is the compile time (fewer the resources, the longer it will take to render).
 
 ## What advantages does Manim offer with respect to other animation tools?
 ### Advantages:
 * It is free and legal.
 * Works on Windows, GNU/Linux (any distribution) and Mac perfectly.
 * Can be used in old computers.
-* Being open source is completely customizable to the user's taste.
+* Being open source, it is completely customizable to the user's taste.
 * It is constantly improving.
 * The video files are very high quality and light.
 * The formulas are created using TeX commands, so they are of professional quality.
 * In the case of not having programming knowledge, it is a good tool to start learning Python and LaTeX.
 ### Disadvantages:
-* If you do not have the LaTeX package (complete) installed, it will occupy more than 4 GB of space on your computer.
+* If you do not have the LaTeX package (complete) installed, it will occupy more than 4 GB of space on your computer (Though you can opt for basic instead of complete installation of LaTex which is efficient in terms of download size, and then download other package as per the need).
 * A graphic interface is not used to perform the animations, everything is based on the Python 3 and TeX commands. The example of the classic Hello world! would be
 ```python
 from manimlib.imports import *
