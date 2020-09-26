@@ -1,6 +1,5 @@
 from manimlib.imports import *
 
-
 class ExampleFail(Scene):
     def construct(self):
         triangle = Triangle()
@@ -16,7 +15,6 @@ class ExampleFail(Scene):
         self.add(square)
         turn_animation_into_updater(anim2)
         self.wait(3)
-
 
 class ExamplePreSolution(Scene):
     def construct(self):
@@ -39,7 +37,7 @@ class ExamplePreSolution(Scene):
         self.wait(3)
 
 
-def update_move_mob_func(mob, end_coord, frame, run_time=2, func=linear):
+def update_move_mob_func(mob, end_coord, fps, run_time=2, func=linear):
     DISTANCE = get_norm(mob.get_center() - end_coord)
     VECTOR = end_coord - mob.get_center()
     UNIT_VECTOR = normalize(VECTOR)
@@ -47,7 +45,7 @@ def update_move_mob_func(mob, end_coord, frame, run_time=2, func=linear):
     mob.start_coord = mob.get_center()
 
     def update(mob, dt):
-        mob.start_time += frame
+        mob.start_time += fps
         if mob.start_time < run_time:
             alpha = mob.start_time / run_time
             alpha_func = func(alpha)
@@ -59,21 +57,21 @@ def update_move_mob_func(mob, end_coord, frame, run_time=2, func=linear):
 class Example(Scene):
     def construct(self):
         text = TextMobject("Hello world")
-        frame = 1 / self.camera.frame_rate
-        update_triangle = update_move_mob_func(
+        fps = 1 / self.camera.frame_rate
+        update_text = update_move_mob_func(
             text,
-            [1, 2, 0],
-            frame,
-            func=linear,
+            [1, 2, 0], # End point
+            fps, # fps
+            func=smooth,
             run_time=3
         )
-        text.add_updater(update_triangle)
+        text.add_updater(update_text)
         anim = Write(text, run_time=3)
         self.add(text)
         turn_animation_into_updater(anim)
         self.wait(5)
 
-class Example3(Scene):
+class Example2(Scene):
     def construct(self):
         triangle = Triangle()
         square = Square()
@@ -87,4 +85,24 @@ class Example3(Scene):
         )
         self.wait()
         self.play(Write(TextMobject("Hello world!",height=1)))
-        self.wait(6)
+        self.wait(3)
+        triangle.clear_updaters()
+        self.play(FadeOut(triangle))
+        self.wait(2)
+
+# INTRO VIDEO
+class IntroVid(Scene):
+    def construct(self):
+        text = TextMobject("Hello world!").scale(2)
+        text.shift(LEFT * 2)
+        frame = 1 / self.camera.frame_rate
+        update_text = update_move_mob_func(
+            text,
+            text.get_center() + np.array([4, 0, 0]), # End point
+            frame, # fps
+            func=smooth,
+            run_time=3
+        )
+        self.add(text)
+        turn_animation_into_updater(anim)
+        self.wait(5)
