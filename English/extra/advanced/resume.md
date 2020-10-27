@@ -446,7 +446,7 @@ class RotateWithPath(Scene):
                 Square(color=RED), Square(color=BLUE)
             ).scale(0.5).set_x(-5)
 
-        path = Line(LEFT*5,RIGHT*5,stroke_opatity=0.5)
+        path = Line(LEFT*5,RIGHT*5,stroke_opacity=0.5)
         path.points[1:3] += UP*2
 
         square2.save_state()
