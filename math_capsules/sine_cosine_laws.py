@@ -1,4 +1,3 @@
-from numpy.lib.twodim_base import tri
 from manimlib.imports import *
 
 class MeasureDistance(VGroup):
