@@ -42,21 +42,21 @@ class AnimateMethod(Scene):
 # |_|___/\___/|_|\__,_|\__\___|  \__\___/_/\_\
 
 
-class IsolateTex1(Scene):
-    def construct(self):
-        t1 = Tex("{{x}}")
-        t2 = Tex("{{x}} - {{x}}")
-        VGroup(t1,t2)\
-            .scale(3)\
-            .arrange(DOWN)
+#class IsolateTex1(Scene):  # THIS IS DEPRECATED, use isolate instead
+    # def construct(self):
+        #t1 = Tex("{{x}}")
+        #t2 = Tex("{{x}} - {{x}}")
+        #VGroup(t1,t2)\
+        #    .scale(3)\
+        #    .arrange(DOWN)
 
-        self.add(t1)
-        self.wait()
-        self.play(
-            TransformMatchingTex(t1,t2),
-            run_time=4
-        )
-        self.wait()
+        #self.add(t1)
+        #self.wait()
+        #self.play(
+        #    TransformMatchingTex(t1,t2),
+        #    run_time=4
+        #)
+        #self.wait()
 
 
 class IsolateTex1v2(Scene):
